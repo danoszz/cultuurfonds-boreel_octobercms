@@ -1,19 +1,14 @@
 {
-    "name": "october/demo-theme",
+    "name": "cultuurfonds-boreel",
     "type": "october-theme",
-    "description": "Demo OctoberCMS theme",
-    "keywords": ["october", "cms", "demo", "theme"],
+    "description": "A theme for Cultuurfonds Boreel running on OctoberCMS theme",
+    "keywords": ["october", "cms", "theme", "boreel"],
     "license": "MIT",
     "authors": [
         {
-            "name": "Alexey Bobkov",
-            "email": "aleksey.bobkov@gmail.com",
-            "role": "Co-founder"
-        },
-        {
-            "name": "Samuel Georges",
-            "email": "daftspunky@gmail.com",
-            "role": "Co-founder"
+            "name": "Daan van der Zawag",
+            "email": "daan@devign.it",
+            "role": "Web developer and designer"
         }
     ],
     "require": {
