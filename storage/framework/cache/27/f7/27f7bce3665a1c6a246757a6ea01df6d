@@ -1,0 +1,53 @@
+1504542148a:1:{s:11:"f5fresh.htm";a:7:{s:8:"fileName";s:11:"f5fresh.htm";s:7:"content";s:629:"title = "Welcome to F5fresh"
+url = "/"
+==
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ this.page.title }}</title>
+    <style>
+     .home {
+         background-color: {{ this.theme.brand_color }};
+     }
+     .splash {
+         width: 100%;
+         text-align: center;
+     }
+     h1 img {
+         vertical-align: middle;
+     }
+    </style>
+</head>
+<body class="home">
+<div class="splash">
+    <h1><img src="{{ 'assets/images/f5icon.png'|theme }}"> {{ this.page.title }}, <small>refer to:
+    <a href="{{ 'styleguide/foundation5'|page }}">Style guide</a></small></h1>
+</div>
+</body>
+</html>
+";s:5:"mtime";i:1504540435;s:6:"markup";s:586:"<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ this.page.title }}</title>
+    <style>
+     .home {
+         background-color: {{ this.theme.brand_color }};
+     }
+     .splash {
+         width: 100%;
+         text-align: center;
+     }
+     h1 img {
+         vertical-align: middle;
+     }
+    </style>
+</head>
+<body class="home">
+<div class="splash">
+    <h1><img src="{{ 'assets/images/f5icon.png'|theme }}"> {{ this.page.title }}, <small>refer to:
+    <a href="{{ 'styleguide/foundation5'|page }}">Style guide</a></small></h1>
+</div>
+</body>
+</html>";s:4:"code";N;s:5:"title";s:18:"Welcome to F5fresh";s:3:"url";s:1:"/";}}

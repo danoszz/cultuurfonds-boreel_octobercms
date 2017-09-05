@@ -1,0 +1,28 @@
+.logo-devign {
+	position: absolute;
+	top: $column--width / 2;
+	right: $column--width / 2;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	svg {
+		height: $column--width / 2;
+
+		path {
+			fill: $white;
+		}
+	}
+	@media screen and (min-width: $phablet-breakpoint) and (min-aspect-ratio: 1/1) and (min-height: $column--width * 8) {
+		height: $column--width * 2;
+		width: $column--width * 2;
+		right: 0;
+		top: 0;
+
+		svg {
+			path {
+				fill: $white;
+			}
+		}
+	}
+}

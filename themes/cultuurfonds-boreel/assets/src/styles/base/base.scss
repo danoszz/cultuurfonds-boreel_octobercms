@@ -1,0 +1,22 @@
+html {
+	box-sizing: border-box;
+	border-collapse: collapse;
+	line-height: 1;
+	-moz-osx-font-smoothing: grayscale;
+	background-color: $black;
+}
+
+* {
+	border-collapse: inherit;
+}
+
+*,
+:after,
+:before {
+	box-sizing: inherit;
+}
+
+:not(body) {
+	background-position: 50%;
+	background-size: cover;
+}
