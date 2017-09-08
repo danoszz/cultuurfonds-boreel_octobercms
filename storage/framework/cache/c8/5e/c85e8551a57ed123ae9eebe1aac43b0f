@@ -1,0 +1,24 @@
+1504728869a:1:{s:16:"site/sidebar.htm";a:5:{s:8:"fileName";s:16:"site/sidebar.htm";s:7:"content";s:265:"<nav>
+  <ul>
+    <li><a href="#">Homepage</a></li>
+    <li><a href="#" class="active">Collection</a></li>
+    <li><a href="#">News</a></li>
+    <li><a href="#">Information</a>
+      <ul>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+";s:5:"mtime";i:1504632783;s:6:"markup";s:264:"<nav>
+  <ul>
+    <li><a href="#">Homepage</a></li>
+    <li><a href="#" class="active">Collection</a></li>
+    <li><a href="#">News</a></li>
+    <li><a href="#">Information</a>
+      <ul>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>";s:4:"code";N;}}

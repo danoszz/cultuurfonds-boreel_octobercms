@@ -7,3 +7,6 @@ $line-height-desktop: 1.45;
 $base: ($base-font-size / 100); // We'll need this for some calculations
 
 $ratio: 1.5; // Perfect Fifth // Modular scale
+
+$font--sans: 'Cabin', 'Helvetica', sans-serif;
+$font--serif: 'Libre Baskerville', 'Georgia', serif;

@@ -1,0 +1,18 @@
+.main-content {
+	// $size--max-width__main-content: $size--grid__tile * 20; // = 60rem
+	justify-self: center;
+	grid-area: main;
+	padding: $size--grid__tile * 2;
+	@media screen and (min-width: 52rem) {
+		$increment-ratio: 1.25;
+		width: $size--width-total__grid--objects * $increment-ratio;
+	}
+	@media screen and (min-width: 70rem) {
+		$increment-ratio: 2;
+		width: $size--width-total__grid--objects * $increment-ratio;
+	}
+	// @media screen and (min-width: 90rem) {
+	// 	$increment-ratio: 2;
+	// 	width: $size--width-total__grid--objects * $increment-ratio;
+	// }
+}

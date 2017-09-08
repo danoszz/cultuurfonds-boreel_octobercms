@@ -1,0 +1,36 @@
+.header {
+  grid-area: header;
+  background-color: $white;
+  display: grid;
+
+  .logo-boreel {
+    width: $size--grid__tile * 2;
+    height: $size--grid__tile * 2;
+    background-color: $white;
+    align-self: center;
+    justify-self: start;
+
+    a {
+      text-decoration: none;
+      color: $black;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+
+      span {
+        font-family: $font--serif;
+        text-decoration: none !important;
+      }
+    }
+  }
+}
+@media screen and (min-width: 52rem) {
+  .header {
+    position: initial;
+    .logo-boreel {
+      justify-self: center;
+    }
+  }
+}

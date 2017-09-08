@@ -23,17 +23,18 @@
 }
 
 
-$font--sans: 'GTWalsheimLight', 'Helvetica', sans-serif;
-$font--serif: 'Perpetua-Bold', 'Georgia', serif;
-
 // Custom Adjustments
 
 body {
   text-rendering: geometricPrecision;
 	font-family: $font--sans;
   h1, h2, h3, h4, h5, h6 {
-		font-variant-ligatures: discretionary-ligatures;
+    font-variant-ligatures: discretionary-ligatures;
+    font-feature-settings: "dlig";
     font-family: $font--serif;
+  }
+  p {
+  //  @include line-height(2.5);
   }
   h1:first-child {
     @include margin-top(0);

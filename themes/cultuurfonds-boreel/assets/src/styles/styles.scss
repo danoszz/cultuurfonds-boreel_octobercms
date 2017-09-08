@@ -13,7 +13,19 @@
 
 // Layouts
 // -------
-@import 'layouts/body';
+@import 'layouts/pages/home';
+@import 'layouts/default';
+
+
+
+// Partials
+// ----------
+@import 'partials/header';
+@import 'partials/main';
+@import 'partials/sidebar';
+@import 'partials/footer';
+
+
 
 // Objects
 // -------
@@ -23,7 +35,4 @@
 
 // Components
 // ----------
-@import 'components/modal';
-@import 'components/logo';
-@import 'components/canvas';
-@import 'components/scrollindicator';
+@import 'components/togglemenu';

@@ -3,7 +3,7 @@ html {
 	border-collapse: collapse;
 	line-height: 1;
 	-moz-osx-font-smoothing: grayscale;
-	background-color: $black;
+	background-color: $white;
 }
 
 * {
@@ -20,3 +20,19 @@ html {
 	background-position: 50%;
 	background-size: cover;
 }
+
+body {
+	min-height: 100vh;
+	// display: flex;
+	// flex-direction: column-reverse;
+	//overflow-x: hidden;
+	@media screen and (min-width: $phablet-breakpoint) and (min-aspect-ratio: 1/1) and (min-height: $column--width * 8) {
+	//	display: initial;
+		//overflow: hidden;
+	}
+}
+
+
+$size--grid__tile: 3rem;
+$size--width-total__grid--objects: ( 3 * ($size--grid__tile * 3) + ($size--grid__tile * 2) ); // formula for width of initial grid objects + gap width = 60rem
+$aspect-ratio--object: (3 / 4);

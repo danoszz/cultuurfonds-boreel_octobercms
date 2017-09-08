@@ -1,0 +1,58 @@
+.sidebar {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: darken($white, 30%);
+  padding: $size--grid__tile * 2;
+
+  nav {
+    font-family: $font--serif;
+
+    ul {
+      list-style: none;
+      line-height: 2;
+      margin: 0;
+      padding: 0;
+
+      li {
+        a {
+          opacity: 0.5; // change to rgba
+          font-size: 2rem;
+
+          &.active {
+            opacity: 1;
+          }
+        }
+
+        ul {
+          padding: 0 1rem;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: $tablet-breakpoint) {
+  .sidebar {
+    grid-area: "sidebar";
+    position: initial;
+    display: block !important; // fix in JS: only add display none toggle < 40em
+    width: auto;
+    height: initial;
+    padding: $size--grid__tile;
+
+    nav {
+      font-family: $font--sans;
+
+      ul {
+        li {
+          a {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
+}

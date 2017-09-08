@@ -1,31 +1,19 @@
 // Inline link styling
 
-$background-color: $white;
-$link-color: $black;
-$link-color-active: $blue;
-
-$link-underline-color: $link-color;
-$link-underline-color-active: $link-color-active;
-
-$link-underline-width: 1px;
-$link-underline-offset: 2.5px;
-
 li a,
 p a {
 	$color: $link-underline-color;
 	$weight: $link-underline-width;
 	$offset: $link-underline-offset;
 	// source: https://codepen.io/ghepting/pen/tLnHK?editors=1100
-	color: $color;
-	text-decoration: none;
-	background-image: linear-gradient( to top, transparent, transparent $offset, $color $offset, $color ($offset + $weight), transparent ($offset + $weight));
-	text-shadow: -$weight -$weight 0 $background-color, $weight -$weight 0 $background-color, -$weight $weight 0 $background-color, $weight $weight 0 $background-color;
+	text-decoration: underline;
+	text-decoration-skip: ink;
 
 	&:focus,
 	&:hover {
 		$color: $link-underline-color-active;
 		color: $link-color-active;
 		text-decoration-color: $link-underline-color-active;
-		background-image: linear-gradient( to top, transparent, transparent $offset, $color $offset, $color ($offset + $weight), transparent ($offset + $weight));
+		//background-image: linear-gradient( to top, transparent, transparent $offset, $color $offset, $color ($offset + $weight), transparent ($offset + $weight));
 	}
 }

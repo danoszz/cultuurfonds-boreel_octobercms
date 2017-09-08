@@ -14,31 +14,33 @@ description = "Default layout"
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="generator" content="OctoberCMS">
   <link rel="icon" type="image/png" href="{{ 'assets/images/october.png'|theme }}">
-  <link href="{{ 'assets/css/vendor.css'|theme }}" rel="stylesheet">
-  <link href="{{ 'assets/css/theme.css'|theme }}" rel="stylesheet"> {% styles %}
+  <link href="https://fonts.googleapis.com/css?family=Cabin:400,500i|Libre+Baskerville:700" rel="stylesheet">
+
+  <link href="{{ 'assets/build/styles/styles.css'|theme }}" rel="stylesheet"> {% styles %}
 </head>
 
 <body>
-
-  <!-- Header -->
-  <header id="layout-header">
-    {% partial 'site/header' %}
-  </header>
-
-  <!-- Content -->
-  <section id="layout-content">
-    {% page %}
-  </section>
-
-  <!-- Footer -->
-  <footer id="layout-footer">
-    {% partial 'site/footer' %}
-  </footer>
+  <div class="grid--container">
+    <header class="header">
+      {% partial 'site/header' %}
+    </header>
+    <main class="main-content">
+      {% page %}
+    </main>
+    <aside class="sidebar">
+      {% partial 'site/sidebar' %}
+    </aside>
+    <footer class="footer">
+      {% partial 'site/footer' %}
+    </footer>
+  </div>
+  <div class="toggle--menu">
+    <p>menu</p>
+  </div>
 
   <!-- Scripts -->
-  <script src="{{ 'assets/vendor/jquery.js'|theme }}"></script>
-  <script src="{{ 'assets/vendor/bootstrap.js'|theme }}"></script>
-  <script src="{{ 'assets/javascript/app.js'|theme }}"></script>
+  <script src="{{ 'assets/build/vendors/jquery.js'|theme }}"></script>
+  <script src="{{ 'assets/build/scripts/app.js'|theme }}"></script>
   {% framework extras %} {% scripts %}
 
 </body>
