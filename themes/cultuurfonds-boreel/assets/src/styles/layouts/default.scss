@@ -1,6 +1,6 @@
 .grid--container {
   display: grid;
-  background-color: darken($white, 5%);
+  background-color: $white;
   grid-template-columns: (2 * $size--grid__tile) 1fr;
   grid-template-rows: (2 * $size--grid__tile) 100vh;
   grid-template-areas: "header header" "main main" "main main" "footer footer";
@@ -29,11 +29,10 @@
     grid-area: "page-intro";
     text-align: justify;
   }
-  @media screen and (min-width: 40rem) {
+  @media screen and (min-width: 52rem) {
 
         grid-template-columns: 1fr 1fr;
         grid-template-areas: "page-title" "page-intro"; // note to self: make use of 'grid' instead of all clutter
-
 
     }
 }

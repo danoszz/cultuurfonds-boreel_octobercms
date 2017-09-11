@@ -5,7 +5,7 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: darken($white, 30%);
+  background-color: $light-gray-one;
   padding: $size--grid__tile * 2;
 
   nav {
@@ -36,7 +36,7 @@
 }
 @media screen and (min-width: $tablet-breakpoint) {
   .sidebar {
-    grid-area: "sidebar";
+    grid-area: sidebar;
     position: initial;
     display: block !important; // fix in JS: only add display none toggle < 40em
     width: auto;

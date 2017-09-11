@@ -415,12 +415,12 @@ h1, h2, h3, h4, h5, p, a, blockquote {
 
 h1 {
   font-size: 2.55915rem;
-  line-height: 2.1rem;
+  line-height: 2.8rem;
   margin-top: 1.4rem;
   margin-bottom: 1.4rem; }
   @media screen and (min-width: 48em) {
     h1 {
-      line-height: 2.175rem; } }
+      line-height: 2.9rem; } }
   @media screen and (min-width: 48em) {
     h1 {
       margin-top: 1.45rem; } }
@@ -503,6 +503,21 @@ h6 {
     h6 {
       margin-bottom: 0rem; } }
 
+p {
+  font-size: 0.94rem;
+  line-height: 1.4rem;
+  margin-top: 0rem;
+  margin-bottom: 0rem; }
+  @media screen and (min-width: 48em) {
+    p {
+      line-height: 1.45rem; } }
+  @media screen and (min-width: 48em) {
+    p {
+      margin-top: 0rem; } }
+  @media screen and (min-width: 48em) {
+    p {
+      margin-bottom: 0rem; } }
+
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -527,42 +542,9 @@ html {
 body {
   min-height: 100vh; }
 
-.page-home--content__results {
-  display: grid;
-  grid-auto-flow: column;
-  grid-template-rows: repeat(6, 12rem);
-  grid-row-gap: 3rem;
-  height: 100%;
-  grid-template-columns: 1fr; }
-  .page-home--content__results .result--object {
-    margin: 0; }
-    .page-home--content__results .result--object:nth-child(1n + 0) {
-      background-color: rgba(0, 0, 0, 0.1); }
-    .page-home--content__results .result--object:nth-child(2n + 0) {
-      background-color: rgba(0, 0, 0, 0.2); }
-    .page-home--content__results .result--object:nth-child(3n + 0) {
-      background-color: rgba(0, 0, 0, 0.3); }
-  @media screen and (min-width: 30rem) {
-    .page-home--content__results {
-      grid-auto-flow: row dense;
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: repeat(3, 1fr);
-      grid-gap: 3rem; } }
-  @media screen and (min-width: 35rem) {
-    .page-home--content__results {
-      height: 61.875rem; } }
-  @media screen and (min-width: 52rem) {
-    .page-home--content__results {
-      height: 61.875rem; } }
-  @media screen and (min-width: 70rem) {
-    .page-home--content__results {
-      height: 49.5rem;
-      grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: repeat(2, 1fr); } }
-
 .grid--container {
   display: grid;
-  background-color: #f2f2f2;
+  background-color: #ffffff;
   grid-template-columns: 6rem 1fr;
   grid-template-rows: 6rem 100vh;
   grid-template-areas: "header header" "main main" "main main" "footer footer"; }
@@ -585,48 +567,64 @@ body {
   .page-default--content__information .page--introduction {
     grid-area: "page-intro";
     text-align: justify; }
-  @media screen and (min-width: 40rem) {
+  @media screen and (min-width: 52rem) {
     .page-default--content__information {
       grid-template-columns: 1fr 1fr;
       grid-template-areas: "page-title" "page-intro"; } }
 
 .header {
   grid-area: header;
-  background-color: #ffffff;
+  background-color: #F9F9F9;
   display: grid; }
   .header .logo-boreel {
     width: 6rem;
     height: 6rem;
-    background-color: #ffffff;
+    background-color: #F9F9F9;
     -ms-flex-item-align: center;
         align-self: center;
     justify-self: start; }
     .header .logo-boreel a {
       text-decoration: none;
-      color: #000000; }
+      color: #000000;
+      display: block;
+      margin: 0;
+      padding: 1.5rem; }
       .header .logo-boreel a img {
         width: 100%;
         height: auto; }
       .header .logo-boreel a span {
+        display: none;
+        visibility: hidden;
         font-family: "Libre Baskerville", "Georgia", serif;
         text-decoration: none !important; }
 
-@media screen and (min-width: 52rem) {
+@media screen and (min-width: 48em) {
   .header {
-    position: initial; }
+    position: initial;
+    background-color: #ffffff; }
     .header .logo-boreel {
-      justify-self: center; } }
+      justify-self: center;
+      background-color: #ffffff; }
+      .header .logo-boreel a {
+        padding: 0; } }
 
 .main-content {
-  justify-self: center;
-  grid-area: main;
-  padding: 6rem; }
-  @media screen and (min-width: 52rem) {
+  width: 100%;
+  padding: 3rem;
+  justify-self: flex-start;
+  grid-area: main; }
+  @media screen and (min-width: 50rem) {
     .main-content {
-      width: 41.25rem; } }
+      border-left: 2px solid rgba(0, 0, 0, 0.05);
+      padding-top: 6rem;
+      padding-left: 6rem; } }
   @media screen and (min-width: 70rem) {
     .main-content {
-      width: 66rem; } }
+      padding-left: 9rem;
+      width: 60rem; } }
+  @media screen and (min-width: 90rem) {
+    .main-content {
+      margin-left: 6rem; } }
 
 .sidebar {
   display: none;
@@ -635,7 +633,7 @@ body {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: #b3b3b3;
+  background-color: #F9F9F9;
   padding: 6rem; }
   .sidebar nav {
     font-family: "Libre Baskerville", "Georgia", serif; }
@@ -654,7 +652,7 @@ body {
 
 @media screen and (min-width: 48em) {
   .sidebar {
-    grid-area: "sidebar";
+    grid-area: sidebar;
     position: initial;
     display: block !important;
     width: auto;
@@ -667,7 +665,60 @@ body {
 
 .footer {
   grid-area: footer;
-  background-color: #999999; }
+  background-color: #F9F9F9;
+  border-left: 2px solid rgba(0, 0, 0, 0.05);
+  padding: 3rem; }
+
+.toggle--menu {
+  position: fixed;
+  right: 1.5rem;
+  bottom: 1.5rem;
+  width: 3rem;
+  height: 3rem;
+  background-color: #000000;
+  color: #ffffff;
+  z-index: 2;
+  display: block;
+  text-align: center; }
+  .toggle--menu p {
+    padding-top: 0.25rem;
+    font-size: 0.75rem; }
+  .toggle--menu.active {
+    background-color: #ffffff;
+    color: #000000; }
+  @media screen and (min-width: 52rem) {
+    .toggle--menu {
+      display: none; } }
+
+.c-gallery--grid {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr;
+  grid-gap: 3rem; }
+  .c-gallery--grid .c-gallery--grid--object {
+    height: calc((100vw - (3rem * 2)) / 0.75);
+    width: 100%;
+    margin: 0;
+    background: #ffffff;
+    -webkit-box-shadow: 0 0.75rem 1.5rem 0 rgba(0, 0, 0, 0.2);
+            box-shadow: 0 0.75rem 1.5rem 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), color-stop(15%, transparent), color-stop(65%, transparent), to(#000000));
+    background-image: linear-gradient(-180deg, rgba(0, 0, 0, 0.5) 0%, transparent 15%, transparent 65%, #000000 100%); }
+  @media screen and (min-width: 30rem) {
+    .c-gallery--grid {
+      grid-template-columns: 1fr 1fr; }
+      .c-gallery--grid .c-gallery--grid--object {
+        height: calc(((100vw / 2) - (3rem * 2)) / 0.75); } }
+  @media screen and (min-width: 48rem) {
+    .c-gallery--grid .c-gallery--grid--object {
+      height: calc(((100vw / 2) - (3rem * 4)) / 0.75); } }
+  @media screen and (min-width: 52rem) {
+    .c-gallery--grid {
+      grid-template-columns: 1fr 1fr 1fr; }
+      .c-gallery--grid .c-gallery--grid--object {
+        height: calc(((100vw / 3) - (3rem * 3)) / 0.75);
+        max-height: 333.33px; } }
 
 li a,
 p a {
@@ -849,6 +900,18 @@ p a {
     -webkit-transform: scale(1, 1);
             transform: scale(1, 1); } }
 
+.grid {
+  position: absolute;
+  pointer-events: none;
+  width: 100%;
+  height: 400vh; }
+
+.grid__vertical {
+  background-position: left top;
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, transparent), color-stop(50%, rgba(0, 0, 237, 0.06)));
+  background-image: linear-gradient(90deg, transparent 50%, rgba(0, 0, 237, 0.06) 50%);
+  background-size: 6rem 100%; }
+
 @font-face {
   font-family: 'GTWalsheimLight';
   src: url("../assets/fonts/GTWalsheimLight.eot"), url("../assets/fonts/GTWalsheimLight.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/GTWalsheimLight.woff") format("woff"), url("../assets/fonts/GTWalsheimLight.ttf") format("truetype"), url("../assets/fonts/GTWalsheimLight.svg#GTWalsheimLight") format("svg");
@@ -880,24 +943,3 @@ body {
     @media screen and (min-width: 48em) {
       body li {
         margin-bottom: 0.725rem; } }
-
-.toggle--menu {
-  position: fixed;
-  right: 1.5rem;
-  bottom: 1.5rem;
-  width: 3rem;
-  height: 3rem;
-  background-color: #000000;
-  color: #ffffff;
-  z-index: 2;
-  display: block;
-  text-align: center; }
-  .toggle--menu p {
-    padding-top: 0.25rem;
-    font-size: 0.75rem; }
-  .toggle--menu.active {
-    background-color: #ffffff;
-    color: #000000; }
-  @media screen and (min-width: 52rem) {
-    .toggle--menu {
-      display: none; } }

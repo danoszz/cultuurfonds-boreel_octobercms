@@ -31,8 +31,3 @@ body {
 		//overflow: hidden;
 	}
 }
-
-
-$size--grid__tile: 3rem;
-$size--width-total__grid--objects: ( 3 * ($size--grid__tile * 3) + ($size--grid__tile * 2) ); // formula for width of initial grid objects + gap width = 60rem
-$aspect-ratio--object: (3 / 4);

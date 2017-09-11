@@ -1,4 +1,4 @@
-1504728869a:1:{s:11:"default.htm";a:6:{s:8:"fileName";s:11:"default.htm";s:7:"content";s:1341:"description = "Default layout"
+1505146343a:1:{s:11:"default.htm";a:6:{s:8:"fileName";s:11:"default.htm";s:7:"content";s:1392:"description = "Default layout"
 
 ==
 
@@ -20,6 +20,7 @@
 </head>
 
 <body>
+  <!-- <div class="grid grid__vertical"></div> -->
   <div class="grid--container">
     <header class="header">
       {% partial 'site/header' %}
@@ -46,7 +47,7 @@
 </body>
 
 </html>
-";s:5:"mtime";i:1504711411;s:6:"markup";s:1304:"<!DOCTYPE html>
+";s:5:"mtime";i:1505145740;s:6:"markup";s:1355:"<!DOCTYPE html>
 <html>
 
 <head>
@@ -64,6 +65,7 @@
 </head>
 
 <body>
+  <!-- <div class="grid grid__vertical"></div> -->
   <div class="grid--container">
     <header class="header">
       {% partial 'site/header' %}

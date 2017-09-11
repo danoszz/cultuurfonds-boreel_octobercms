@@ -26,26 +26,26 @@ class __TwigTemplate_42b6b0f50aef4ef85d87d4cb9ef2d5c365505f6ad81cf6e81dcce2895f4
   <div class=\"placeholder placeholder__sort\"></div>
 </div>
 <h2>Featured works</h2>
-<div class=\"page-home--content__results\">
-  <figure class=\"result--object\">
+<div class=\"c-gallery--grid\">
+  <figure class=\"c-gallery--grid--object\">
     <div class=\"thiswillbeanimage\"></div>
   </figure>
-  <figure class=\"result--object\">
+  <figure class=\"c-gallery--grid--object\">
     <div class=\"thiswillbeanimage\"></div>
   </figure>
-  <figure class=\"result--object\">
+  <figure class=\"c-gallery--grid--object\">
     <div class=\"thiswillbeanimage\"></div>
   </figure>
-  <figure class=\"result--object\">
+  <figure class=\"c-gallery--grid--object\">
     <div class=\"thiswillbeanimage\"></div>
   </figure>
-  <figure class=\"result--object\">
+  <figure class=\"c-gallery--grid--object\">
     <div class=\"thiswillbeanimage\"></div>
   </figure>
-  <figure class=\"result--object\">
+  <figure class=\"c-gallery--grid--object\">
     <div class=\"thiswillbeanimage\"></div>
   </figure>
-  <figure class=\"result--object\">
+  <figure class=\"c-gallery--grid--object\">
     <div class=\"thiswillbeanimage\"></div>
   </figure>
 </div>";
@@ -81,26 +81,26 @@ class __TwigTemplate_42b6b0f50aef4ef85d87d4cb9ef2d5c365505f6ad81cf6e81dcce2895f4
   <div class=\"placeholder placeholder__sort\"></div>
 </div>
 <h2>Featured works</h2>
-<div class=\"page-home--content__results\">
-  <figure class=\"result--object\">
+<div class=\"c-gallery--grid\">
+  <figure class=\"c-gallery--grid--object\">
     <div class=\"thiswillbeanimage\"></div>
   </figure>
-  <figure class=\"result--object\">
+  <figure class=\"c-gallery--grid--object\">
     <div class=\"thiswillbeanimage\"></div>
   </figure>
-  <figure class=\"result--object\">
+  <figure class=\"c-gallery--grid--object\">
     <div class=\"thiswillbeanimage\"></div>
   </figure>
-  <figure class=\"result--object\">
+  <figure class=\"c-gallery--grid--object\">
     <div class=\"thiswillbeanimage\"></div>
   </figure>
-  <figure class=\"result--object\">
+  <figure class=\"c-gallery--grid--object\">
     <div class=\"thiswillbeanimage\"></div>
   </figure>
-  <figure class=\"result--object\">
+  <figure class=\"c-gallery--grid--object\">
     <div class=\"thiswillbeanimage\"></div>
   </figure>
-  <figure class=\"result--object\">
+  <figure class=\"c-gallery--grid--object\">
     <div class=\"thiswillbeanimage\"></div>
   </figure>
 </div>", "/Applications/MAMP/htdocs/cultuurfonds-boreel/themes/cultuurfonds-boreel/pages/home.htm", "");

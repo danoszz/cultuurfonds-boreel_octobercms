@@ -1,4 +1,4 @@
-1504728869a:1:{s:8:"home.htm";a:8:{s:8:"fileName";s:8:"home.htm";s:7:"content";s:1314:"title = "Demonstration"
+1505146666a:1:{s:8:"home.htm";a:8:{s:8:"fileName";s:8:"home.htm";s:7:"content";s:1365:"title = "Demonstration"
 url = "/"
 layout = "default"
 
@@ -13,30 +13,30 @@ layout = "default"
   <div class="placeholder placeholder__sort"></div>
 </div>
 <h2>Featured works</h2>
-<div class="page-home--content__results">
-  <figure class="result--object">
+<div class="c-gallery--grid">
+  <figure class="c-gallery--grid--object">
     <div class="thiswillbeanimage"></div>
   </figure>
-  <figure class="result--object">
+  <figure class="c-gallery--grid--object">
     <div class="thiswillbeanimage"></div>
   </figure>
-  <figure class="result--object">
+  <figure class="c-gallery--grid--object">
     <div class="thiswillbeanimage"></div>
   </figure>
-  <figure class="result--object">
+  <figure class="c-gallery--grid--object">
     <div class="thiswillbeanimage"></div>
   </figure>
-  <figure class="result--object">
+  <figure class="c-gallery--grid--object">
     <div class="thiswillbeanimage"></div>
   </figure>
-  <figure class="result--object">
+  <figure class="c-gallery--grid--object">
     <div class="thiswillbeanimage"></div>
   </figure>
-  <figure class="result--object">
+  <figure class="c-gallery--grid--object">
     <div class="thiswillbeanimage"></div>
   </figure>
 </div>
-";s:5:"mtime";i:1504710945;s:6:"markup";s:1256:"<div class="page-default--content__information">
+";s:5:"mtime";i:1505145447;s:6:"markup";s:1307:"<div class="page-default--content__information">
   <h1 class="page--title">Cultuurfonds Boreel</h1>
   <p class="page--introduction">Et rerum suscipit doloremque omnis velit veniam. Sit soluta cupiditate voluptate quis vitae facilis et. Doloribus autem architecto pariatur. Perspiciatis quis tempore ut maiores. Occaecati est repudiandae saepe.</p>
 </div>
@@ -46,26 +46,26 @@ layout = "default"
   <div class="placeholder placeholder__sort"></div>
 </div>
 <h2>Featured works</h2>
-<div class="page-home--content__results">
-  <figure class="result--object">
+<div class="c-gallery--grid">
+  <figure class="c-gallery--grid--object">
     <div class="thiswillbeanimage"></div>
   </figure>
-  <figure class="result--object">
+  <figure class="c-gallery--grid--object">
     <div class="thiswillbeanimage"></div>
   </figure>
-  <figure class="result--object">
+  <figure class="c-gallery--grid--object">
     <div class="thiswillbeanimage"></div>
   </figure>
-  <figure class="result--object">
+  <figure class="c-gallery--grid--object">
     <div class="thiswillbeanimage"></div>
   </figure>
-  <figure class="result--object">
+  <figure class="c-gallery--grid--object">
     <div class="thiswillbeanimage"></div>
   </figure>
-  <figure class="result--object">
+  <figure class="c-gallery--grid--object">
     <div class="thiswillbeanimage"></div>
   </figure>
-  <figure class="result--object">
+  <figure class="c-gallery--grid--object">
     <div class="thiswillbeanimage"></div>
   </figure>
 </div>";s:4:"code";N;s:5:"title";s:13:"Demonstration";s:3:"url";s:1:"/";s:6:"layout";s:7:"default";}}

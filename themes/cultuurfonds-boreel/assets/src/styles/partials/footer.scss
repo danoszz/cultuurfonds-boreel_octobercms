@@ -1,4 +1,7 @@
 .footer {
   grid-area: footer;
-  background-color: darken($white, 40%);
+  background-color: $light-gray-one;
+  border-left: 2px solid rgba($black,0.05);
+
+  padding: $size--grid__tile;
 }

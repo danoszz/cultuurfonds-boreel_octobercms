@@ -1,18 +1,22 @@
 .main-content {
-	// $size--max-width__main-content: $size--grid__tile * 20; // = 60rem
-	justify-self: center;
+	width: 100%;
+	padding: $size--grid__tile;
+	justify-self: flex-start;
 	grid-area: main;
-	padding: $size--grid__tile * 2;
-	@media screen and (min-width: 52rem) {
-		$increment-ratio: 1.25;
-		width: $size--width-total__grid--objects * $increment-ratio;
+	@media screen and (min-width: 50rem) {
+		//max-width: $size--grid__tile * 18;
+		border-left: 2px solid rgba($black,0.05);
+		padding-top: $size--grid__tile * 2;
+		padding-left: $size--grid__tile * 2;
 	}
 	@media screen and (min-width: 70rem) {
-		$increment-ratio: 2;
-		width: $size--width-total__grid--objects * $increment-ratio;
+		padding-left: $size--grid__tile * 3;
+		//max-width: $size--grid__tile * 30;
+		width: $size--grid__tile * 20;
 	}
-	// @media screen and (min-width: 90rem) {
-	// 	$increment-ratio: 2;
-	// 	width: $size--width-total__grid--objects * $increment-ratio;
-	// }
+	@media screen and (min-width: 90rem) {
+		margin-left: $size--grid__tile * 2;
+		// max-width: $size--grid__tile * 30;
+		// width: $size--grid__tile * 20;
+	}
 }
