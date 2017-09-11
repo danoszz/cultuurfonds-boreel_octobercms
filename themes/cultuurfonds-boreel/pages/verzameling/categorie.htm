@@ -1,0 +1,22 @@
+title = "Verzameling Categorie"
+url = "/verzameling/categorie/:slug"
+layout = "default"
+description = "Bekijk de kunstverzameling per categorie."
+is_hidden = 0
+
+[blogCategories]
+slug = "{{ :slug }}"
+displayEmpty = 0
+categoryPage = 404
+
+[blogPosts]
+pageNumber = "{{ :page }}"
+categoryFilter = "{{ :slug }}"
+postsPerPage = 10
+noPostsMessage = "No posts found"
+sortOrder = "published_at desc"
+categoryPage = 404
+postPage = 404
+==
+{% component 'blogCategories' %}
+{% component 'blogPosts' %}

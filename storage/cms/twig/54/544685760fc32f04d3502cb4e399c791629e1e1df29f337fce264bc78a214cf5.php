@@ -26,29 +26,11 @@ class __TwigTemplate_42b6b0f50aef4ef85d87d4cb9ef2d5c365505f6ad81cf6e81dcce2895f4
   <div class=\"placeholder placeholder__sort\"></div>
 </div>
 <h2>Featured works</h2>
-<div class=\"c-gallery--grid\">
-  <figure class=\"c-gallery--grid--object\">
-    <div class=\"thiswillbeanimage\"></div>
-  </figure>
-  <figure class=\"c-gallery--grid--object\">
-    <div class=\"thiswillbeanimage\"></div>
-  </figure>
-  <figure class=\"c-gallery--grid--object\">
-    <div class=\"thiswillbeanimage\"></div>
-  </figure>
-  <figure class=\"c-gallery--grid--object\">
-    <div class=\"thiswillbeanimage\"></div>
-  </figure>
-  <figure class=\"c-gallery--grid--object\">
-    <div class=\"thiswillbeanimage\"></div>
-  </figure>
-  <figure class=\"c-gallery--grid--object\">
-    <div class=\"thiswillbeanimage\"></div>
-  </figure>
-  <figure class=\"c-gallery--grid--object\">
-    <div class=\"thiswillbeanimage\"></div>
-  </figure>
-</div>";
+";
+        // line 11
+        $context['__cms_component_params'] = [];
+        echo $this->env->getExtension('CMS')->componentFunction("blogPosts"        , $context['__cms_component_params']        );
+        unset($context['__cms_component_params']);
     }
 
     public function getTemplateName()
@@ -56,9 +38,14 @@ class __TwigTemplate_42b6b0f50aef4ef85d87d4cb9ef2d5c365505f6ad81cf6e81dcce2895f4
         return "/Applications/MAMP/htdocs/cultuurfonds-boreel/themes/cultuurfonds-boreel/pages/home.htm";
     }
 
+    public function isTraitable()
+    {
+        return false;
+    }
+
     public function getDebugInfo()
     {
-        return array (  19 => 1,);
+        return array (  31 => 11,  19 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -81,28 +68,6 @@ class __TwigTemplate_42b6b0f50aef4ef85d87d4cb9ef2d5c365505f6ad81cf6e81dcce2895f4
   <div class=\"placeholder placeholder__sort\"></div>
 </div>
 <h2>Featured works</h2>
-<div class=\"c-gallery--grid\">
-  <figure class=\"c-gallery--grid--object\">
-    <div class=\"thiswillbeanimage\"></div>
-  </figure>
-  <figure class=\"c-gallery--grid--object\">
-    <div class=\"thiswillbeanimage\"></div>
-  </figure>
-  <figure class=\"c-gallery--grid--object\">
-    <div class=\"thiswillbeanimage\"></div>
-  </figure>
-  <figure class=\"c-gallery--grid--object\">
-    <div class=\"thiswillbeanimage\"></div>
-  </figure>
-  <figure class=\"c-gallery--grid--object\">
-    <div class=\"thiswillbeanimage\"></div>
-  </figure>
-  <figure class=\"c-gallery--grid--object\">
-    <div class=\"thiswillbeanimage\"></div>
-  </figure>
-  <figure class=\"c-gallery--grid--object\">
-    <div class=\"thiswillbeanimage\"></div>
-  </figure>
-</div>", "/Applications/MAMP/htdocs/cultuurfonds-boreel/themes/cultuurfonds-boreel/pages/home.htm", "");
+{% component 'blogPosts' %}", "/Applications/MAMP/htdocs/cultuurfonds-boreel/themes/cultuurfonds-boreel/pages/home.htm", "");
     }
 }

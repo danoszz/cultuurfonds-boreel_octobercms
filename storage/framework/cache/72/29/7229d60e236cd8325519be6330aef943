@@ -1,0 +1,23 @@
+1505168037a:1:{s:25:"verzameling/categorie.htm";a:12:{s:8:"fileName";s:25:"verzameling/categorie.htm";s:7:"content";s:488:"title = "Verzameling Categorie"
+url = "/verzameling/categorie/:slug"
+layout = "default"
+description = "Bekijk de kunstverzameling per categorie."
+is_hidden = 0
+
+[blogCategories]
+slug = "{{ :slug }}"
+displayEmpty = 0
+categoryPage = 404
+
+[blogPosts]
+pageNumber = "{{ :page }}"
+categoryFilter = "{{ :slug }}"
+postsPerPage = 10
+noPostsMessage = "No posts found"
+sortOrder = "published_at desc"
+categoryPage = 404
+postPage = 404
+==
+{% component 'blogCategories' %}
+{% component 'blogPosts' %}";s:5:"mtime";i:1505163376;s:6:"markup";s:61:"{% component 'blogCategories' %}
+{% component 'blogPosts' %}";s:4:"code";N;s:5:"title";s:21:"Verzameling Categorie";s:3:"url";s:28:"/verzameling/categorie/:slug";s:6:"layout";s:7:"default";s:11:"description";s:41:"Bekijk de kunstverzameling per categorie.";s:9:"is_hidden";s:1:"0";s:14:"blogCategories";a:3:{s:4:"slug";s:11:"{{ :slug }}";s:12:"displayEmpty";s:1:"0";s:12:"categoryPage";s:3:"404";}s:9:"blogPosts";a:7:{s:10:"pageNumber";s:11:"{{ :page }}";s:14:"categoryFilter";s:11:"{{ :slug }}";s:12:"postsPerPage";s:2:"10";s:14:"noPostsMessage";s:14:"No posts found";s:9:"sortOrder";s:17:"published_at desc";s:12:"categoryPage";s:3:"404";s:8:"postPage";s:3:"404";}}}

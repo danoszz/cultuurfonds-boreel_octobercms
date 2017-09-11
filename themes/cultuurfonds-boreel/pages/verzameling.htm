@@ -1,0 +1,21 @@
+title = "Verzameling"
+url = "/verzameling/:slug"
+layout = "default"
+description = "Bekijk kunst in een specifieke verzameling."
+is_hidden = 0
+
+[blogPosts]
+pageNumber = "{{ :page }}"
+postsPerPage = 10
+noPostsMessage = "No posts found"
+sortOrder = "published_at desc"
+categoryPage = "verzameling/categorie"
+postPage = "verzameling/kunstwerk"
+
+[blogCategories]
+slug = "{{ :slug }}"
+displayEmpty = 0
+categoryPage = "verzameling/categorie"
+==
+{% component 'blogPosts' %}
+{% component 'blogCategories' %}

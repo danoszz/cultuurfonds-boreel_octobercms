@@ -14,9 +14,8 @@
 		//max-width: $size--grid__tile * 30;
 		width: $size--grid__tile * 20;
 	}
-	@media screen and (min-width: 90rem) {
-		margin-left: $size--grid__tile * 2;
-		// max-width: $size--grid__tile * 30;
-		// width: $size--grid__tile * 20;
+	@media screen and (min-width: 85rem) {
+		padding-left: $size--grid__tile * 4;
+		width: $size--grid__tile * 22;
 	}
 }
