@@ -3,7 +3,7 @@
   width: 100%;
   grid-template-columns: 1fr;
   grid-gap: $size--grid__tile;
-
+  margin-top: $size--grid__tile;
   .c-gallery--grid--object {
     height: calc((100vw - (#{$size--grid__tile} * 2)) / #{$aspect-ratio--object});
     width: 100%;

@@ -5,9 +5,9 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: $light-gray-one;
+  background-color: $light-red-one;
   padding: $size--grid__tile * 2;
-
+  z-index: 5;
   nav {
     font-family: $font--serif;
 
@@ -19,16 +19,24 @@
 
       li {
         a {
-          opacity: 0.5; // change to rgba
+          color: rgba($black, 0.6);
           font-size: 2rem;
-
-          &.active {
-            opacity: 1;
-          }
+          text-decoration: none;
         }
 
         ul {
           padding: 0 1rem;
+        }
+
+        &.active {
+          a {
+            color: $light-red-one;
+          }
+        }
+        &:hover {
+          a {
+            color: rgba($black, 1);
+          }
         }
       }
     }
@@ -41,6 +49,7 @@
     display: block !important; // fix in JS: only add display none toggle < 40em
     width: auto;
     height: initial;
+    background-color: $light-gray-one;
     padding: $size--grid__tile;
 
     nav {

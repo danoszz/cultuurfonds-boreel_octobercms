@@ -11,15 +11,22 @@ noPostsMessage = "No posts found"
 sortOrder = "published_at desc"
 categoryPage = "verzameling/categorie"
 postPage = "verzameling/kunstwerk"
+
+[searchForm]
+resultPage = "verzameling"
+categoryFilter = 0
 ==
-<div class="page-default--content__information">
-  <h1 class="page--title">Cultuurfonds Boreel</h1>
-  <p class="page--introduction">Et rerum suscipit doloremque omnis velit veniam. Sit soluta cupiditate voluptate quis vitae facilis et. Doloribus autem architecto pariatur. Perspiciatis quis tempore ut maiores. Occaecati est repudiandae saepe.</p>
+<div class="main-content--hero main-content--hero__home">
+  <h1>Cultuurfonds Boreel</h1>
 </div>
-<div class="page-home--content__interaction">
-  <div class="placeholder placeholder__search"></div>
-  <div class="placeholder placeholder__filter"></div>
-  <div class="placeholder placeholder__sort"></div>
+<div class="main-content--container">
+  <div class="page-home--content__information">
+    <h2 class="page--title">Over de online verzameling</h2>
+    <p class="page--introduction">Et rerum suscipit doloremque omnis velit veniam. Sit soluta cupiditate voluptate quis vitae facilis et. Doloribus autem architecto pariatur. Perspiciatis quis tempore ut maiores. Occaecati est repudiandae saepe. Incidunt recusandae natus beatae blanditiis.</p>
+  </div>
+  <div class="c-gallery--search">
+    {% component 'searchForm' %}
+  </div>
+  <h2>Een greep uit de collectie</h2>
+  {% component 'blogPosts' %}
 </div>
-<h2>Featured works</h2>
-{% component 'blogPosts' %}

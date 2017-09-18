@@ -16,6 +16,20 @@ postPage = "verzameling/kunstwerk"
 slug = "{{ :slug }}"
 displayEmpty = 0
 categoryPage = "verzameling/categorie"
+
+[searchForm]
+resultPage = "verzameling"
+categoryFilter = 1
 ==
+<div class="main-content--container">
+<div class="page-default--content__information">
+  <h1 class="page--title">Verzameling</h1>
+  <p class="page--introduction">Et rerum suscipit doloremque omnis velit veniam. Sit soluta cupiditate voluptate quis vitae facilis et. Doloribus autem architecto pariatur. Perspiciatis quis tempore ut maiores. Occaecati est repudiandae saepe.</p>
+</div>
+<div class="c-gallery--search">
+  {% component 'searchForm' %}
+</div>
+
+<h2>Een greep uit de collectie</h2>
 {% component 'blogPosts' %}
-{% component 'blogCategories' %}
+</div>

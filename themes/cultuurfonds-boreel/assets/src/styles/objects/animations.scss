@@ -1,89 +1,48 @@
-
-.modal-info {
-	opacity: 0;
-	visibility: hidden;
-	animation: ($delay--total * 1.5) $transition--smooth ($delay__main / $ratio) fadeInModal forwards;
-	transform-origin: 0 100%;
-
-	.info-modal--text-container {
-		* {
-			opacity: 0;
-			transform-origin: 50% 0;
-			animation: $fadeinBottom;
-			animation-delay: $delay__main;
-		}
-
-		h1 {
-			animation-delay: $delay__main + $delay__1;
-		}
-
-		p:nth-child(2) {
-			animation-delay: $delay__main + $delay__2;
-		}
-
-		p:nth-child(3) {
-			animation-delay: $delay__main + $delay__3;
-		}
-
-		.text-container__links {
-			@for $i from 1 to 8 {
-				li:nth-child(#{$i}) {
-					animation-delay: ($delay__main + $delay__3) + ($i * $delay__1 / ($ratio * 2));
-				}
-			}
+.c-gallery--grid {
+	* {
+		opacity: 0;
+		animation: $fadeinBottom;
+	}
+	@for $i from 1 to 20 {
+		.c-gallery--grid--object:nth-child(#{$i}) {
+			animation-delay: $delay__main + ($i * $delay__1);
 		}
 	}
 
-	.info-modal--button {
-		animation: $delay--total $transition--smooth slideOut forwards;
-		animation-delay: $delay__main + $delay__5;
-
-		span {
-			animation: $delay--total $transition--smooth fadeIn forwards;
-			animation-delay: ($delay__main + $delay__5) * ($ratio / 2);
-		}
-	}
 }
 
-.scroll-indicator__down {
-	animation: ($delay--total * 4) scrollIndicator $transition--smooth infinite;
-}
+
 @keyframes fadeInBottom {
-	0% {
-		opacity: 0;
-		transform: translateY($column--width / 2) scaleY(0.5);
-	}
-
-	80% {
-		opacity: 1;
-	}
-
-	100% {
-		opacity: 1;
-		transform: translateY(0) scaleY(1);
-	}
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
-@keyframes fadeInModal {
-	0% {
-		opacity: 0;
-		visibility: hidden;
-		transform: scaleY(0);
-	}
 
-	10% {
-		opacity: 1;
-		visibility: visible;
-	}
-
-	100% {
-		opacity: 1;
-		visibility: visible;
-		transform: scaleY(1);
-	}
+@keyframes fadeIntop {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
-@keyframes slideOut {
+
+@keyframes fadeIn {
 	100% {
-		transform: translateX($column--width / 2);
+		opacity: 1;
 	}
 }
 @keyframes scrollIndicator {

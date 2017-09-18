@@ -1,11 +1,11 @@
 <nav>
   <ul>
-    <li><a href="#">Homepage</a></li>
-    <li><a href="#" class="active">Collection</a></li>
-    <li><a href="#">News</a></li>
-    <li><a href="#">Information</a>
+    <li class="{% if this.page.id == 'home' %}active{% endif %}"><a href="{{ 'home'|page }}">Homepagina</a></li>
+    <li class="{% if this.page.id == 'verzameling' %}active{% endif %}"><a href="{{ 'verzameling'|page }}">Verzameling</a></li>
+    <li class="{% if this.page.id == 'nieuws' %}active{% endif %}"><a href="{{ 'nieuws'|page }}">Nieuws</a></li>
+    <li class="{% if this.page.id == 'informatie' %}active{% endif %}"><a href="{{ 'informatie'|page }}">Informatie</a>
       <ul>
-        <li><a href="#">Contact</a></li>
+        <li class="{% if this.page.id == 'contact' %}active{% endif %}"><a href="{{ 'contact'|page }}">Contact</a></li>
       </ul>
     </li>
   </ul>

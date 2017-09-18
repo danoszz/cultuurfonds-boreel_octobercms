@@ -17,7 +17,6 @@
 @import 'layouts/default';
 
 
-
 // Partials
 // ----------
 @import 'partials/header';
@@ -25,14 +24,16 @@
 @import 'partials/sidebar';
 @import 'partials/footer';
 
-// Components
-// ----------
-@import 'components/togglemenu';
-@import 'components/c-gallery--grid';
-
 // Objects
 // -------
 @import 'objects/links';
+@import 'objects/forms';
 @import 'objects/animations';
 @import 'objects/grid';
 @import 'objects/typography';
+
+// Components
+// ----------
+@import 'components/togglemenu';
+@import 'components/c-gallery--search';
+@import 'components/c-gallery--grid';

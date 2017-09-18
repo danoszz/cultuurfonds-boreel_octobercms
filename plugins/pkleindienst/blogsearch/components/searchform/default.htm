@@ -1,0 +1,79 @@
+<form class="c-gallery--search__form" method="GET" action="{{ __SELF__.resultPage|page }}">
+  <input class="c-gallery--search--form__searchbar" type="text" name="search" class="form-control">
+
+  <button class="c-gallery--search--form__button" type="submit">{{ 'Search'|_ }}</button>
+  <div class="c-gallery--search--form__filter toggle--filtersort">
+    <h3 class="toggle--filtersort__title">Verfijnen</h3>
+    <div class="toggle--filtersort__inner">
+
+      <fieldset class="filtersort--inner__column control-group">
+        <legend>
+          <h4>Datering</h4>
+        </legend>
+        <label class="control control--checkbox">
+            <input type="checkbox" name="datering" value="19eeuw"/>
+            <span>First checkbox</span>
+            <div class="control__indicator"></div>
+          </label>
+        <label class="control control--checkbox">
+            <input type="checkbox" name="datering" value="19eeuw"/>
+            <span>First checkbox</span>
+            <div class="control__indicator"></div>
+          </label>
+        <label class="control control--checkbox">
+            <input type="checkbox" name="datering" value="19eeuw"/>
+            <span>First checkbox</span>
+            <div class="control__indicator"></div>
+          </label>
+        <label class="control control--checkbox">
+            <input type="checkbox" name="datering" value="19eeuw"/>
+            <span>First checkbox</span>
+            <div class="control__indicator"></div>
+          </label>
+      </fieldset>
+
+      <fieldset class="filtersort--inner__column control-group">
+        <legend>
+          <h4>Kunstenaar</h4>
+        </legend>
+        {% if __SELF__.categoryFilter %}
+          {% for key,cat in __SELF__.categories %}
+          <label class="control control--checkbox">
+            <input type="checkbox" name="kunstenaar" value="{{ key }}"/>
+            <span>{{ cat }}</span>
+            <div class="control__indicator"></div>
+          </label>
+          {% endfor %}
+        {% endif %}
+
+
+      </fieldset>
+
+    </div>
+  </div>
+  <div class="c-gallery--search--form__sort toggle--filtersort">
+    <h3 class="toggle--filtersort__title">Sorteren</h3>
+    <div class="toggle--filtersort__inner">
+      <fieldset>
+        <label class="control control--radio">
+          <input type="radio" name="sort" value="relevantie"/>
+          <span>Relevantie</span>
+          <div class="control__indicator"></div>
+        </label>
+
+        <label class="control control--radio">
+          <input type="radio" name="sort" value="chronologisch"/>
+          <span>Chronologisch</span>
+          <div class="control__indicator"></div>
+        </label>
+
+        <label class="control control--radio">
+          <input type="radio" name="sort" value="recent"/>
+          <span>Meest recent</span>
+          <div class="control__indicator"></div>
+        </label>
+      </fieldset>
+    </div>
+  </div>
+
+</form>

@@ -8,6 +8,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 APP
 
 **********************************************************************/
+
 var $ = require('../../../devtools/node_modules/jquery/dist/jquery.min.js');
 
 var App = function App() {
@@ -18,6 +19,15 @@ var App = function App() {
     $(".sidebar").slideToggle("slow", function () {
       // Animation complete.
     });
+  });
+
+  var toggleContainer = $('.toggle--filtersort');
+  var toggleButton = $(".toggle--filtersort__title");
+  var toggleInner = $(".toggle--filtersort__inner");
+
+  toggleButton.click(function () {
+    $(this).next(toggleInner).slideToggle(225);
+    $(this).parent().toggleClass('active');
   });
 };
 

@@ -1,21 +1,77 @@
 .main-content {
-	width: 100%;
-	padding: $size--grid__tile;
-	justify-self: flex-start;
 	grid-area: main;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+
+	.main-content--hero {
+		width: 100%;
+		height: $size--grid__tile * 4;
+		background-color: $light-red-one;
+		display: flex;
+		align-items: center;
+		padding: $size--grid__tile;
+
+		&.main-content--hero__home {
+			h1 {
+				margin: 0;
+				width: 50%;
+				color: $white;
+			}
+		}
+	}
+
+	.main-content--container {
+		width: 100%;
+		padding: $size--grid__tile;
+		justify-self: flex-start;
+		grid-area: main;
+	}
 	@media screen and (min-width: 50rem) {
-		//max-width: $size--grid__tile * 18;
-		border-left: 2px solid rgba($black,0.05);
-		padding-top: $size--grid__tile * 2;
-		padding-left: $size--grid__tile * 2;
+		.main-content--hero {
+			padding: $size--grid__tile * 4;
+
+			&.main-content--hero__home {
+				h1 {
+					font-size: 6vw;
+					line-height: initial;
+					margin: initial;
+				}
+			}
+		}
+	}
+	@media screen and (min-width: 50rem) {
+		.main-content--container,
+		.main-content--hero {
+			&.main-content--hero__home {
+				height: 50vh;
+			}
+			padding-left: $size--grid__tile * 2;
+			border-left: 2px solid rgba($black,0.05);
+		}
+
+		.main-content--container {
+			padding-top: $size--grid__tile * 2;
+		}
 	}
 	@media screen and (min-width: 70rem) {
-		padding-left: $size--grid__tile * 3;
-		//max-width: $size--grid__tile * 30;
-		width: $size--grid__tile * 20;
+		.main-content--container,
+		.main-content--hero {
+			padding-left: $size--grid__tile * 3;
+		}
+
+		.main-content--container {
+			width: $size--grid__tile * 20;
+		}
 	}
 	@media screen and (min-width: 85rem) {
-		padding-left: $size--grid__tile * 4;
-		width: $size--grid__tile * 22;
+		.main-content--container,
+		.main-content--hero {
+			padding-left: $size--grid__tile * 4;
+		}
+
+		.main-content--container {
+			width: $size--grid__tile * 22;
+		}
 	}
 }
