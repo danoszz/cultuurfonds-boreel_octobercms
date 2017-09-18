@@ -1,4 +1,4 @@
-1505734061a:1:{s:11:"default.htm";a:6:{s:8:"fileName";s:11:"default.htm";s:7:"content";s:1392:"description = "Default layout"
+1505737657a:1:{s:11:"default.htm";a:6:{s:8:"fileName";s:11:"default.htm";s:7:"content";s:1399:"description = "Default layout"
 
 ==
 
@@ -14,7 +14,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="generator" content="OctoberCMS">
   <link rel="icon" type="image/png" href="{{ 'assets/images/october.png'|theme }}">
-  <link href="https://fonts.googleapis.com/css?family=Cabin:400,500i|Libre+Baskerville:700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cabin:400,500,600,700|Libre+Baskerville:700" rel="stylesheet">
 
   <link href="{{ 'assets/build/styles/styles.css'|theme }}" rel="stylesheet"> {% styles %}
 </head>
@@ -47,7 +47,7 @@
 </body>
 
 </html>
-";s:5:"mtime";i:1505145740;s:6:"markup";s:1355:"<!DOCTYPE html>
+";s:5:"mtime";i:1505737054;s:6:"markup";s:1362:"<!DOCTYPE html>
 <html>
 
 <head>
@@ -59,7 +59,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="generator" content="OctoberCMS">
   <link rel="icon" type="image/png" href="{{ 'assets/images/october.png'|theme }}">
-  <link href="https://fonts.googleapis.com/css?family=Cabin:400,500i|Libre+Baskerville:700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cabin:400,500,600,700|Libre+Baskerville:700" rel="stylesheet">
 
   <link href="{{ 'assets/build/styles/styles.css'|theme }}" rel="stylesheet"> {% styles %}
 </head>

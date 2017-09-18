@@ -1,4 +1,4 @@
-1505734061a:1:{s:25:"verzameling/kunstwerk.htm";a:11:{s:8:"fileName";s:25:"verzameling/kunstwerk.htm";s:7:"content";s:221:"title = "Verzameling Kunstwerk"
+1505737518a:1:{s:25:"verzameling/kunstwerk.htm";a:11:{s:8:"fileName";s:25:"verzameling/kunstwerk.htm";s:7:"content";s:221:"title = "Verzameling Kunstwerk"
 url = "/verzameling/kunstwerk/:slug"
 layout = "default"
 description = "Bekijk een kunstwerk."

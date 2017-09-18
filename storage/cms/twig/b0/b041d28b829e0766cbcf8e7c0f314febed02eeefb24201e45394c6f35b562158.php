@@ -40,7 +40,7 @@ class __TwigTemplate_ad84972374b7ef52600192e39bd449dcb2b69b9321c5cdd268c7fbbb482
         // line 12
         echo $this->env->getExtension('Cms\Twig\Extension')->themeFilter("assets/images/october.png");
         echo "\">
-  <link href=\"https://fonts.googleapis.com/css?family=Cabin:400,500i|Libre+Baskerville:700\" rel=\"stylesheet\">
+  <link href=\"https://fonts.googleapis.com/css?family=Cabin:400,500,600,700|Libre+Baskerville:700\" rel=\"stylesheet\">
 
   <link href=\"";
         // line 15
@@ -153,7 +153,7 @@ class __TwigTemplate_ad84972374b7ef52600192e39bd449dcb2b69b9321c5cdd268c7fbbb482
   <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
   <meta name=\"generator\" content=\"OctoberCMS\">
   <link rel=\"icon\" type=\"image/png\" href=\"{{ 'assets/images/october.png'|theme }}\">
-  <link href=\"https://fonts.googleapis.com/css?family=Cabin:400,500i|Libre+Baskerville:700\" rel=\"stylesheet\">
+  <link href=\"https://fonts.googleapis.com/css?family=Cabin:400,500,600,700|Libre+Baskerville:700\" rel=\"stylesheet\">
 
   <link href=\"{{ 'assets/build/styles/styles.css'|theme }}\" rel=\"stylesheet\"> {% styles %}
 </head>

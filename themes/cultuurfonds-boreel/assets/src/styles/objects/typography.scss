@@ -33,16 +33,19 @@ body {
     font-feature-settings: "dlig";
     font-family: $font--serif;
   }
- h2, h3, h4, h5, h6 {
+ h2, h3, h4, h5, h6, p {
     font-family: $font--sans;
     font-weight: 400;
   }
   p {
-  //  @include line-height(2.5);
+  //font-size: ms(-1);
   }
   h1:first-child {
     @include margin-top(0);
   }
+  h3 {
+    font-weight: 600;
+ }
 	li {
 		@include margin-bottom(0.5);
 	}

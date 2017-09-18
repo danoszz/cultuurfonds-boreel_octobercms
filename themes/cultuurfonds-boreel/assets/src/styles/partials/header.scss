@@ -15,7 +15,8 @@
       color: $black;
       display: block;
       margin: 0;
-            padding: $size--grid__tile / 2;
+      padding: $size--grid__tile / 2;
+
       img {
         width: 100%;
         height: auto;
@@ -34,11 +35,15 @@
   .header {
     position: initial;
     background-color: $white;
+
     .logo-boreel {
       justify-self: center;
       background-color: $white;
 
       a {
+        position: relative;
+        transform: translateY(-50%);
+        top: 50%;
         padding: 0;
       }
     }

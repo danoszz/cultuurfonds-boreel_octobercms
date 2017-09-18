@@ -1,4 +1,4 @@
-1505734061a:1:{s:16:"site/sidebar.htm";a:5:{s:8:"fileName";s:16:"site/sidebar.htm";s:7:"content";s:655:"<nav>
+1505737518a:1:{s:16:"site/sidebar.htm";a:5:{s:8:"fileName";s:16:"site/sidebar.htm";s:7:"content";s:655:"<nav>
   <ul>
     <li class="{% if this.page.id == 'home' %}active{% endif %}"><a href="{{ 'home'|page }}">Homepagina</a></li>
     <li class="{% if this.page.id == 'verzameling' %}active{% endif %}"><a href="{{ 'verzameling'|page }}">Verzameling</a></li>
