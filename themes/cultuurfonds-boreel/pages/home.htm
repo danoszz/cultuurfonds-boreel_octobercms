@@ -1,20 +1,30 @@
 title = "Home"
 url = "/"
 layout = "default"
+description = "Cultuurfonds Boreel"
 is_hidden = 0
 
-[blogPosts]
+[blogPosts galleryPosts]
 pageNumber = "{{ :page }}"
-categoryFilter = "{{ :slug }}"
-postsPerPage = 6
+categoryFilter = "kunstwerk"
+postsPerPage = 3
 noPostsMessage = "No posts found"
-sortOrder = "published_at desc"
+sortOrder = "random"
 categoryPage = "verzameling/categorie"
 postPage = "verzameling/kunstwerk"
 
 [searchForm]
 resultPage = "verzameling"
 categoryFilter = 0
+
+[blogPosts newsPosts]
+pageNumber = "{{ :page }}"
+categoryFilter = "nieuws"
+postsPerPage = 6
+noPostsMessage = "No posts found"
+sortOrder = "published_at desc"
+categoryPage = "nieuws/categorie"
+postPage = "nieuws/bericht"
 ==
 <div class="main-content--hero main-content--hero__home">
   <h1>Cultuurfonds Boreel</h1>
@@ -28,5 +38,8 @@ categoryFilter = 0
     {% component 'searchForm' %}
   </div>
   <h2>Een greep uit de collectie</h2>
-  {% component 'blogPosts' %}
+  {% component 'galleryPosts' %}
+  
+    <h2>Het laatste nieuws</h2>
+   {% component 'newsPosts' %}
 </div>

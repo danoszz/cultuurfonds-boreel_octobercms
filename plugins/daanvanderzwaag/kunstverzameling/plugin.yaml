@@ -1,0 +1,6 @@
+plugin:
+    name: 'daanvanderzwaag.kunstverzameling::lang.plugin.name'
+    description: 'daanvanderzwaag.kunstverzameling::lang.plugin.description'
+    author: 'Daan van der Zwaag'
+    icon: oc-icon-file
+    homepage: ''

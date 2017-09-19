@@ -4,15 +4,16 @@ layout = "default"
 description = "Bekijk kunst in een specifieke verzameling."
 is_hidden = 0
 
-[blogPosts]
+[blogPosts galleryPosts]
 pageNumber = "{{ :page }}"
+categoryFilter = "kunstwerk"
 postsPerPage = 10
 noPostsMessage = "No posts found"
 sortOrder = "published_at desc"
 categoryPage = "verzameling/categorie"
 postPage = "verzameling/kunstwerk"
 
-[blogCategories]
+[blogCategories galleryCategories]
 slug = "{{ :slug }}"
 displayEmpty = 0
 categoryPage = "verzameling/categorie"
@@ -31,5 +32,5 @@ categoryFilter = 1
 </div>
 
 <h2>Een greep uit de collectie</h2>
-{% component 'blogPosts' %}
+{% component 'galleryPosts' %}
 </div>

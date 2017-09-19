@@ -36,9 +36,10 @@ body {
  h2, h3, h4, h5, h6, p {
     font-family: $font--sans;
     font-weight: 400;
+
   }
   p {
-  //font-size: ms(-1);
+ color: $dark-gray-one;
   }
   h1:first-child {
     @include margin-top(0);

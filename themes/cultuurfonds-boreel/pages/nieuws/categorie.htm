@@ -1,0 +1,22 @@
+title = "Nieuws Categorie"
+url = "/nieuws/categorie/:slug"
+layout = "default"
+description = "Bekijk nieuws berichten in een specifieke categorie."
+is_hidden = 0
+
+[blogCategories newsCategories]
+slug = "{{ :slug }}"
+displayEmpty = 0
+categoryPage = 404
+
+[blogPosts newsPosts]
+pageNumber = "{{ :page }}"
+categoryFilter = ":slug"
+postsPerPage = 10
+noPostsMessage = "No posts found"
+sortOrder = "published_at desc"
+categoryPage = 404
+postPage = 404
+==
+{% component 'newsPosts' %}
+{% component 'newsCategories' %}

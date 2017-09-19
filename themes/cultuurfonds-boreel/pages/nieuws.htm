@@ -1,0 +1,22 @@
+title = "Nieuws"
+url = "/nieuws"
+layout = "default"
+description = "Pagina met laatste nieuwsberichten"
+is_hidden = 0
+
+[blogPosts newsPosts]
+pageNumber = "{{ :page }}"
+categoryFilter = "nieuws"
+postsPerPage = 10
+noPostsMessage = "No posts found"
+sortOrder = "published_at desc"
+categoryPage = "nieuws/categorie"
+postPage = "nieuws/bericht"
+
+[blogCategories newsCategories]
+slug = "{{ :slug }}"
+displayEmpty = 0
+categoryPage = "nieuws/categorie"
+==
+{% component 'newsPosts' %}
+{% component 'newsCategories' %}

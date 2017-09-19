@@ -8,8 +8,6 @@ $control-color__spot: $light-red-one;
 
 .control-group {
   display: inline-block;
-  background-color: $white;
-//  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
   padding: $size--grid__tile / 2;
 }
 
@@ -35,7 +33,7 @@ $control-color__spot: $light-red-one;
 
 .control__indicator {
   position: absolute;
-  top: 2px;
+  top: 0;
   left: 0;
   height: $size--grid__tile / 3;
   width: $size--grid__tile / 3;
@@ -50,28 +48,34 @@ $control-color__spot: $light-red-one;
 
 .control {
   &:hover input ~ .control__indicator {
-    background: rgba($control-color__dark, 0.4);
+    background: rgba($control-color__dark, 0.2); // on hover control styling
   }
   input {
     &:focus ~ .control__indicator {
-      background: rgba($control-color__dark, 0.4);
+      box-shadow: 0 0 0 2px $control-color__spot; // control checked & focus styling
+
+    //  background: rgba($control-color__dark, 0.4); // on focus control styling
     }
     &:checked ~ .control__indicator {
-      background: $control-color__dark;
+      background: $control-color__dark; // control checked styling
     }
     &:checked + span {
-      text-decoration: underline;
+      text-decoration: underline; // control checked + text styling
       text-decoration-skip: ink;
     }
   }
   &:hover input:not([disabled]):checked ~ .control__indicator {
-    background: rgba($control-color__spot, 0.4);
+   // if control disabled checked & hover styling
+
   }
   input {
     &:checked:focus ~ .control__indicator {
-      background: $dark-red-one;
+      // control checked & focus styling
+
     }
     &:disabled ~ .control__indicator {
+      // control disabled
+
       background: $control-color__dark;
       opacity: 0.6;
       pointer-events: none;

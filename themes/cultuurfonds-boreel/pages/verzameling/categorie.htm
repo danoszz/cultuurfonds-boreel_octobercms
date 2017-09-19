@@ -4,12 +4,12 @@ layout = "default"
 description = "Bekijk de kunstverzameling per categorie."
 is_hidden = 0
 
-[blogCategories]
+[blogCategories galleryPosts]
 slug = "{{ :slug }}"
 displayEmpty = 0
 categoryPage = 404
 
-[blogPosts]
+[blogPosts galleryCategories]
 pageNumber = "{{ :page }}"
 categoryFilter = "{{ :slug }}"
 postsPerPage = 10
@@ -18,5 +18,5 @@ sortOrder = "published_at desc"
 categoryPage = 404
 postPage = 404
 ==
-{% component 'blogCategories' %}
-{% component 'blogPosts' %}
+{% component 'galleryCategories' %}
+{% component 'galleryPosts' %}

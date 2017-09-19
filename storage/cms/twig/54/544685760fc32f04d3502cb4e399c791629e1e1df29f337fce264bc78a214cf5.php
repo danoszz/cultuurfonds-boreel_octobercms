@@ -36,9 +36,17 @@ class __TwigTemplate_42b6b0f50aef4ef85d87d4cb9ef2d5c365505f6ad81cf6e81dcce2895f4
   ";
         // line 13
         $context['__cms_component_params'] = [];
-        echo $this->env->getExtension('CMS')->componentFunction("blogPosts"        , $context['__cms_component_params']        );
+        echo $this->env->getExtension('CMS')->componentFunction("galleryPosts"        , $context['__cms_component_params']        );
         unset($context['__cms_component_params']);
         // line 14
+        echo "  
+    <h2>Het laatste nieuws</h2>
+   ";
+        // line 16
+        $context['__cms_component_params'] = [];
+        echo $this->env->getExtension('CMS')->componentFunction("newsPosts"        , $context['__cms_component_params']        );
+        unset($context['__cms_component_params']);
+        // line 17
         echo "</div>";
     }
 
@@ -54,7 +62,7 @@ class __TwigTemplate_42b6b0f50aef4ef85d87d4cb9ef2d5c365505f6ad81cf6e81dcce2895f4
 
     public function getDebugInfo()
     {
-        return array (  42 => 14,  38 => 13,  34 => 11,  30 => 10,  19 => 1,);
+        return array (  50 => 17,  46 => 16,  42 => 14,  38 => 13,  34 => 11,  30 => 10,  19 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -79,7 +87,10 @@ class __TwigTemplate_42b6b0f50aef4ef85d87d4cb9ef2d5c365505f6ad81cf6e81dcce2895f4
     {% component 'searchForm' %}
   </div>
   <h2>Een greep uit de collectie</h2>
-  {% component 'blogPosts' %}
+  {% component 'galleryPosts' %}
+  
+    <h2>Het laatste nieuws</h2>
+   {% component 'newsPosts' %}
 </div>", "/Applications/MAMP/htdocs/cultuurfonds-boreel/themes/cultuurfonds-boreel/pages/home.htm", "");
     }
 }

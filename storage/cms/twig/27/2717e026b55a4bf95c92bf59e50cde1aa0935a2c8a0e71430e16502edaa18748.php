@@ -19,13 +19,18 @@ class __TwigTemplate_4830a76640f083f694b3fc25a97415760c2fb1c76bf194db82647b13fe0
         echo "<form class=\"c-gallery--search__form\" method=\"GET\" action=\"";
         echo $this->env->getExtension('Cms\Twig\Extension')->pageFilter($this->getAttribute(($context["__SELF__"] ?? null), "resultPage", array()));
         echo "\">
-  <input class=\"c-gallery--search--form__searchbar\" type=\"text\" name=\"search\" class=\"form-control\">
-
-  <button class=\"c-gallery--search--form__button\" type=\"submit\">";
+  <div class=\"c-gallery--search__form--wrapper__search\">
+    <input class=\"c-gallery--search--form__searchbar\" type=\"text\" name=\"search\" class=\"form-control\">
+    <button class=\"c-gallery--search--form__button\" type=\"submit\">";
         // line 4
-        echo call_user_func_array($this->env->getFilter('_')->getCallable(), array("Search"));
+        echo call_user_func_array($this->env->getFilter('_')->getCallable(), array("Zoek"));
         echo "</button>
-  <div class=\"c-gallery--search--form__filter toggle--filtersort\">
+  </div>
+  ";
+        // line 6
+        if (($this->getAttribute($this->getAttribute(($context["this"] ?? null), "page", array()), "url", array()) == "/verzameling/:slug")) {
+            // line 7
+            echo "  <div class=\"c-gallery--search--form__filter toggle--filtersort\">
     <h3 class=\"toggle--filtersort__title\">Verfijnen</h3>
     <div class=\"toggle--filtersort__inner\">
 
@@ -60,35 +65,35 @@ class __TwigTemplate_4830a76640f083f694b3fc25a97415760c2fb1c76bf194db82647b13fe0
           <h4>Kunstenaar</h4>
         </legend>
         ";
-        // line 39
-        if ($this->getAttribute(($context["__SELF__"] ?? null), "categoryFilter", array())) {
-            // line 40
-            echo "          ";
-            $context['_parent'] = $context;
-            $context['_seq'] = twig_ensure_traversable($this->getAttribute(($context["__SELF__"] ?? null), "categories", array()));
-            foreach ($context['_seq'] as $context["key"] => $context["cat"]) {
-                // line 41
-                echo "          <label class=\"control control--checkbox\">
-            <input type=\"checkbox\" name=\"kunstenaar\" value=\"";
+            // line 41
+            if ($this->getAttribute(($context["__SELF__"] ?? null), "categoryFilter", array())) {
                 // line 42
-                echo twig_escape_filter($this->env, $context["key"], "html", null, true);
-                echo "\"/>
+                echo "          ";
+                $context['_parent'] = $context;
+                $context['_seq'] = twig_ensure_traversable($this->getAttribute(($context["__SELF__"] ?? null), "categories", array()));
+                foreach ($context['_seq'] as $context["key"] => $context["cat"]) {
+                    // line 43
+                    echo "          <label class=\"control control--checkbox\">
+            <input type=\"checkbox\" name=\"kunstenaar\" value=\"";
+                    // line 44
+                    echo twig_escape_filter($this->env, $context["key"], "html", null, true);
+                    echo "\"/>
             <span>";
-                // line 43
-                echo twig_escape_filter($this->env, $context["cat"], "html", null, true);
-                echo "</span>
+                    // line 45
+                    echo twig_escape_filter($this->env, $context["cat"], "html", null, true);
+                    echo "</span>
             <div class=\"control__indicator\"></div>
           </label>
           ";
+                }
+                $_parent = $context['_parent'];
+                unset($context['_seq'], $context['_iterated'], $context['key'], $context['cat'], $context['_parent'], $context['loop']);
+                $context = array_intersect_key($context, $_parent) + $_parent;
+                // line 49
+                echo "        ";
             }
-            $_parent = $context['_parent'];
-            unset($context['_seq'], $context['_iterated'], $context['key'], $context['cat'], $context['_parent'], $context['loop']);
-            $context = array_intersect_key($context, $_parent) + $_parent;
-            // line 47
-            echo "        ";
-        }
-        // line 48
-        echo "
+            // line 50
+            echo "
 
       </fieldset>
 
@@ -118,8 +123,10 @@ class __TwigTemplate_4830a76640f083f694b3fc25a97415760c2fb1c76bf194db82647b13fe0
       </fieldset>
     </div>
   </div>
-
-</form>
+    ";
+        }
+        // line 81
+        echo "</form>
 ";
     }
 
@@ -135,7 +142,7 @@ class __TwigTemplate_4830a76640f083f694b3fc25a97415760c2fb1c76bf194db82647b13fe0
 
     public function getDebugInfo()
     {
-        return array (  91 => 48,  88 => 47,  78 => 43,  74 => 42,  71 => 41,  66 => 40,  64 => 39,  26 => 4,  19 => 1,);
+        return array (  129 => 81,  96 => 50,  93 => 49,  83 => 45,  79 => 44,  76 => 43,  71 => 42,  69 => 41,  33 => 7,  31 => 6,  26 => 4,  19 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -149,9 +156,11 @@ class __TwigTemplate_4830a76640f083f694b3fc25a97415760c2fb1c76bf194db82647b13fe0
     public function getSourceContext()
     {
         return new Twig_Source("<form class=\"c-gallery--search__form\" method=\"GET\" action=\"{{ __SELF__.resultPage|page }}\">
-  <input class=\"c-gallery--search--form__searchbar\" type=\"text\" name=\"search\" class=\"form-control\">
-
-  <button class=\"c-gallery--search--form__button\" type=\"submit\">{{ 'Search'|_ }}</button>
+  <div class=\"c-gallery--search__form--wrapper__search\">
+    <input class=\"c-gallery--search--form__searchbar\" type=\"text\" name=\"search\" class=\"form-control\">
+    <button class=\"c-gallery--search--form__button\" type=\"submit\">{{ 'Zoek'|_ }}</button>
+  </div>
+  {% if this.page.url == '/verzameling/:slug' %}
   <div class=\"c-gallery--search--form__filter toggle--filtersort\">
     <h3 class=\"toggle--filtersort__title\">Verfijnen</h3>
     <div class=\"toggle--filtersort__inner\">
@@ -225,7 +234,7 @@ class __TwigTemplate_4830a76640f083f694b3fc25a97415760c2fb1c76bf194db82647b13fe0
       </fieldset>
     </div>
   </div>
-
+    {% endif %}
 </form>
 ", "/Applications/MAMP/htdocs/cultuurfonds-boreel/plugins/pkleindienst/blogsearch/components/searchform/default.htm", "");
     }

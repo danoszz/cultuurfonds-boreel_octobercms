@@ -1,7 +1,9 @@
 <form class="c-gallery--search__form" method="GET" action="{{ __SELF__.resultPage|page }}">
-  <input class="c-gallery--search--form__searchbar" type="text" name="search" class="form-control">
-
-  <button class="c-gallery--search--form__button" type="submit">{{ 'Search'|_ }}</button>
+  <div class="c-gallery--search__form--wrapper__search">
+    <input class="c-gallery--search--form__searchbar" type="text" name="search" class="form-control">
+    <button class="c-gallery--search--form__button" type="submit">{{ 'Zoek'|_ }}</button>
+  </div>
+  {% if this.page.url == '/verzameling/:slug' %}
   <div class="c-gallery--search--form__filter toggle--filtersort">
     <h3 class="toggle--filtersort__title">Verfijnen</h3>
     <div class="toggle--filtersort__inner">
@@ -75,5 +77,5 @@
       </fieldset>
     </div>
   </div>
-
+    {% endif %}
 </form>

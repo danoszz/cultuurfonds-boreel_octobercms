@@ -62,6 +62,13 @@ secondaryTabs:
             type: textarea
             size: small
 
+        excerpt:
+            tab: rainlab.blog::lang.post.tab_manage
+            label: rainlab.blog::lang.post.excerpt
+            type: textarea
+            size: small
+
+
         featured_images:
             tab: rainlab.blog::lang.post.tab_manage
             label: rainlab.blog::lang.post.featured_images

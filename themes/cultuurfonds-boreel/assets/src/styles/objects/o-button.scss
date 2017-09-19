@@ -1,0 +1,44 @@
+.o-button {
+  text-decoration: none;
+  border: 1px solid $black;
+  border-radius: $size--grid__tile;
+  margin: 0;
+  color: $black;
+  background-color: transparent;
+  max-height: $size--grid__tile;
+  position: relative;
+  span {
+    padding-left: $size--grid__tile / 6;
+  }
+  &.o-button--medium {
+    padding: ($size--grid__tile / 6) ($size--grid__tile / 2);
+    &.o-button--medium__outline-color {
+      color: $light-red-one;
+      border: 1px solid $light-red-one;
+      span svg {
+        color: $light-red-one;
+      }
+      &:hover {
+        color: $white;
+        background-color: $light-red-one;
+        span svg {
+          color: $white;
+        }
+      }
+    }
+  }
+
+  span svg {
+    color: $black;
+    height: $size--grid__tile / 4;
+  }
+
+  &:hover {
+    color: $white;
+    background-color: $black;
+
+    span svg {
+      color: $white;
+    }
+  }
+}

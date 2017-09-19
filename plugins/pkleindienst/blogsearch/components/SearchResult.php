@@ -116,7 +116,7 @@ class SearchResult extends ComponentBase
                 'title'        => 'rainlab.blog::lang.settings.posts_no_posts',
                 'description'  => 'rainlab.blog::lang.settings.posts_no_posts_description',
                 'type'         => 'string',
-                'default'      => 'No posts found',
+                'default'      => 'Helaas zijn er geen kunstwerken gevonden op uw zoekterm.',
                 'showExternalParam' => false
             ],
             'sortOrder' => [

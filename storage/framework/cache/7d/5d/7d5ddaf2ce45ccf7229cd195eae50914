@@ -1,4 +1,4 @@
-1505737518a:1:{s:15:"site/header.htm";a:5:{s:8:"fileName";s:15:"site/header.htm";s:7:"content";s:218:"<div class="logo-boreel">
+1505857801a:1:{s:15:"site/header.htm";a:5:{s:8:"fileName";s:15:"site/header.htm";s:7:"content";s:218:"<div class="logo-boreel">
   <a href="{{ 'home'|page }}">
     <img src="{{ 'assets/build/assets/images/logo-boreel_wapen.svg'|theme }}" alt="Logo Cultuurfonds Boreel">
     <span>Cultuurfonds Boreel</span>

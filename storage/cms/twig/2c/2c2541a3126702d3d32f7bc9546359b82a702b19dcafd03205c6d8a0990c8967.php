@@ -34,7 +34,7 @@ class __TwigTemplate_91ff97378a3ec6e4bee3e341cc4c290356682543a1ed65662009e323569
 ";
         // line 11
         $context['__cms_component_params'] = [];
-        echo $this->env->getExtension('CMS')->componentFunction("blogPosts"        , $context['__cms_component_params']        );
+        echo $this->env->getExtension('CMS')->componentFunction("galleryPosts"        , $context['__cms_component_params']        );
         unset($context['__cms_component_params']);
         // line 12
         echo "</div>";
@@ -75,7 +75,7 @@ class __TwigTemplate_91ff97378a3ec6e4bee3e341cc4c290356682543a1ed65662009e323569
 </div>
 
 <h2>Een greep uit de collectie</h2>
-{% component 'blogPosts' %}
+{% component 'galleryPosts' %}
 </div>", "/Applications/MAMP/htdocs/cultuurfonds-boreel/themes/cultuurfonds-boreel/pages/verzameling.htm", "");
     }
 }
