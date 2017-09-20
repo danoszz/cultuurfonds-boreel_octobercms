@@ -2,7 +2,7 @@
 
 use Xeor\Duplicate\Classes\Duplicate;
 
-Route::get('backend/xeor/duplicate', function (){
+Route::get('plugins/xeor/duplicate', function (){
     $loggedIn = BackendAuth::check();
     $redirectTo = Config::get('cms.backendUri', 'backend');
     if ($loggedIn) {

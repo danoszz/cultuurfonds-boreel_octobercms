@@ -1,4 +1,4 @@
-1505857800a:1:{s:11:"default.htm";a:6:{s:8:"fileName";s:11:"default.htm";s:7:"content";s:1406:"description = "Default layout"
+1505917633a:1:{s:11:"default.htm";a:6:{s:8:"fileName";s:11:"default.htm";s:7:"content";s:1399:"description = "Default layout"
 
 ==
 
@@ -26,7 +26,6 @@
       {% partial 'site/header' %}
     </header>
     <main class="main-content">
-      
       {% page %}
     </main>
     <aside class="sidebar">
@@ -48,7 +47,7 @@
 </body>
 
 </html>
-";s:5:"mtime";i:1505835085;s:6:"markup";s:1369:"<!DOCTYPE html>
+";s:5:"mtime";i:1505908806;s:6:"markup";s:1362:"<!DOCTYPE html>
 <html>
 
 <head>
@@ -72,7 +71,6 @@
       {% partial 'site/header' %}
     </header>
     <main class="main-content">
-      
       {% page %}
     </main>
     <aside class="sidebar">

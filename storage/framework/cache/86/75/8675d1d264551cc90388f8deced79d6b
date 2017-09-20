@@ -1,0 +1,64 @@
+1505915443a:1:{s:29:"newsPost/news-post_header.htm";a:5:{s:8:"fileName";s:29:"newsPost/news-post_header.htm";s:7:"content";s:1570:"<div class="main-content--hero main-content--hero__post">
+  <a class="hero__post--button o-button o-button--medium o-button--medium__outline-light" href="{{ 'nieuws'|page }}">
+    Ga naar nieuwsoverzicht
+    <span>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 14">
+      <g fill="none" fill-rule="evenodd" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M1.48 7h14.4042l-5.6375 5.8707M1.48 6.8707h14.4042L10.2467 1"/>
+      </g>
+    </svg>
+   </span>
+  </a>
+  <div class="hero__post--navigation">
+    <a class="hero__post--navigation--button o-button o-button--icon o-button--icon__outline-light" href="{% set lastPost = newsPost.previousPost %}">
+      <span>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 14">
+        <g fill="none" fill-rule="evenodd" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M1.48 7h14.4042l-5.6375 5.8707M1.48 6.8707h14.4042L10.2467 1"/>
+        </g>
+      </svg>
+     </span>
+    </a>
+    <a class="hero__post--navigation--button o-button o-button--icon o-button--icon__outline-light" href="{% set nextPost = newsPost.nextPost %}">
+      <span>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 14">
+        <g fill="none" fill-rule="evenodd" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M1.48 7h14.4042l-5.6375 5.8707M1.48 6.8707h14.4042L10.2467 1"/>
+        </g>
+      </svg>
+     </span>
+    </a>
+  </div>
+</div>
+";s:5:"mtime";i:1505910443;s:6:"markup";s:1569:"<div class="main-content--hero main-content--hero__post">
+  <a class="hero__post--button o-button o-button--medium o-button--medium__outline-light" href="{{ 'nieuws'|page }}">
+    Ga naar nieuwsoverzicht
+    <span>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 14">
+      <g fill="none" fill-rule="evenodd" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M1.48 7h14.4042l-5.6375 5.8707M1.48 6.8707h14.4042L10.2467 1"/>
+      </g>
+    </svg>
+   </span>
+  </a>
+  <div class="hero__post--navigation">
+    <a class="hero__post--navigation--button o-button o-button--icon o-button--icon__outline-light" href="{% set lastPost = newsPost.previousPost %}">
+      <span>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 14">
+        <g fill="none" fill-rule="evenodd" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M1.48 7h14.4042l-5.6375 5.8707M1.48 6.8707h14.4042L10.2467 1"/>
+        </g>
+      </svg>
+     </span>
+    </a>
+    <a class="hero__post--navigation--button o-button o-button--icon o-button--icon__outline-light" href="{% set nextPost = newsPost.nextPost %}">
+      <span>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 14">
+        <g fill="none" fill-rule="evenodd" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M1.48 7h14.4042l-5.6375 5.8707M1.48 6.8707h14.4042L10.2467 1"/>
+        </g>
+      </svg>
+     </span>
+    </a>
+  </div>
+</div>";s:4:"code";N;}}

@@ -1,0 +1,37 @@
+1505917850a:1:{s:26:"galleryRelated/default.htm";a:5:{s:8:"fileName";s:26:"galleryRelated/default.htm";s:7:"content";s:693:"
+  <div class="c-gallery--grid">
+      {% for Post in __SELF__.posts %}
+      <figure class="c-gallery--grid--object">
+        {% if post.featured_images.count %}
+          {% for image in post.featured_images %}
+        <img data-src="{{ image.filename }}" src="{{ image.path | resize(500, false, { mode: 'auto', quality: '80' }) }}" alt="{{ image.description }}" />
+          {% endfor %}
+        {% endif %}
+        <figcaption>
+            <p class="excerpt">{{ post.summary|raw }}</p>
+            <h3>{{ post.title }}</h3>
+        </figcaption>
+        <a href="{{ post.url }}"></a>
+      </figure>
+    {% else %}
+    <p class="no-data">{{ noPostsMessage }}</p>
+    {% endfor %}
+  </div>
+";s:5:"mtime";i:1505916492;s:6:"markup";s:689:"<div class="c-gallery--grid">
+      {% for Post in __SELF__.posts %}
+      <figure class="c-gallery--grid--object">
+        {% if post.featured_images.count %}
+          {% for image in post.featured_images %}
+        <img data-src="{{ image.filename }}" src="{{ image.path | resize(500, false, { mode: 'auto', quality: '80' }) }}" alt="{{ image.description }}" />
+          {% endfor %}
+        {% endif %}
+        <figcaption>
+            <p class="excerpt">{{ post.summary|raw }}</p>
+            <h3>{{ post.title }}</h3>
+        </figcaption>
+        <a href="{{ post.url }}"></a>
+      </figure>
+    {% else %}
+    <p class="no-data">{{ noPostsMessage }}</p>
+    {% endfor %}
+  </div>";s:4:"code";N;}}

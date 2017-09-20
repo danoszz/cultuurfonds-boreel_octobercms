@@ -1,4 +1,4 @@
-1505857800a:1:{s:20:"nieuws/categorie.htm";a:12:{s:8:"fileName";s:20:"nieuws/categorie.htm";s:7:"content";s:508:"title = "Nieuws Categorie"
+1505917633a:1:{s:20:"nieuws/categorie.htm";a:12:{s:8:"fileName";s:20:"nieuws/categorie.htm";s:7:"content";s:508:"title = "Nieuws Categorie"
 url = "/nieuws/categorie/:slug"
 layout = "default"
 description = "Bekijk nieuws berichten in een specifieke categorie."

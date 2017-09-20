@@ -25,10 +25,10 @@ class __TwigTemplate_9b40208c2f5dda7abab9911d7b482780bd67760f70bf661594818594a18
         foreach ($context['_seq'] as $context["_key"] => $context["post"]) {
             // line 3
             echo "  <div class=\"c-news--grid--object\">
-    <p class=\"object--date\">";
+    <span class=\"object--date\">";
             // line 4
             echo twig_escape_filter($this->env, twig_date_format_filter($this->env, $this->getAttribute($context["post"], "published_at", array()), "M d, Y"), "html", null, true);
-            echo "</p>
+            echo "</span>
     <h3 class=\"object--title\">";
             // line 5
             echo twig_escape_filter($this->env, $this->getAttribute($context["post"], "title", array()), "html", null, true);
@@ -63,56 +63,11 @@ class __TwigTemplate_9b40208c2f5dda7abab9911d7b482780bd67760f70bf661594818594a18
         // line 20
         echo "</div>
 
-
-
 ";
-        // line 24
-        if (($this->getAttribute(($context["posts"] ?? null), "lastPage", array()) > 1)) {
-            // line 25
-            echo "<ul class=\"pagination\">
-  ";
-            // line 26
-            if (($this->getAttribute(($context["posts"] ?? null), "currentPage", array()) > 1)) {
-                // line 27
-                echo "  <li><a href=\"";
-                echo $this->env->getExtension('Cms\Twig\Extension')->pageFilter($this->getAttribute($this->getAttribute(($context["this"] ?? null), "page", array()), "baseFileName", array()), array(($context["pageParam"] ?? null) => ($this->getAttribute(($context["posts"] ?? null), "currentPage", array()) - 1)));
-                echo "\">&larr; Prev</a></li>
-  ";
-            }
-            // line 28
-            echo " ";
-            $context['_parent'] = $context;
-            $context['_seq'] = twig_ensure_traversable(range(1, $this->getAttribute(($context["posts"] ?? null), "lastPage", array())));
-            foreach ($context['_seq'] as $context["_key"] => $context["page"]) {
-                // line 29
-                echo "  <li class=\"";
-                echo ((($this->getAttribute(($context["posts"] ?? null), "currentPage", array()) == $context["page"])) ? ("active") : (null));
-                echo "\">
-    <a href=\"";
-                // line 30
-                echo $this->env->getExtension('Cms\Twig\Extension')->pageFilter($this->getAttribute($this->getAttribute(($context["this"] ?? null), "page", array()), "baseFileName", array()), array(($context["pageParam"] ?? null) => $context["page"]));
-                echo "\">";
-                echo twig_escape_filter($this->env, $context["page"], "html", null, true);
-                echo "</a>
-  </li>
-  ";
-            }
-            $_parent = $context['_parent'];
-            unset($context['_seq'], $context['_iterated'], $context['_key'], $context['page'], $context['_parent'], $context['loop']);
-            $context = array_intersect_key($context, $_parent) + $_parent;
-            // line 32
-            echo " ";
-            if (($this->getAttribute(($context["posts"] ?? null), "lastPage", array()) > $this->getAttribute(($context["posts"] ?? null), "currentPage", array()))) {
-                // line 33
-                echo "  <li><a href=\"";
-                echo $this->env->getExtension('Cms\Twig\Extension')->pageFilter($this->getAttribute($this->getAttribute(($context["this"] ?? null), "page", array()), "baseFileName", array()), array(($context["pageParam"] ?? null) => ($this->getAttribute(($context["posts"] ?? null), "currentPage", array()) + 1)));
-                echo "\">Next &rarr;</a></li>
-  ";
-            }
-            // line 35
-            echo "</ul>
-";
-        }
+        // line 22
+        $context['__cms_partial_params'] = [];
+        echo $this->env->getExtension('CMS')->partialFunction("newsPosts/news-posts_pagination"        , $context['__cms_partial_params']        );
+        unset($context['__cms_partial_params']);
     }
 
     public function getTemplateName()
@@ -127,7 +82,7 @@ class __TwigTemplate_9b40208c2f5dda7abab9911d7b482780bd67760f70bf661594818594a18
 
     public function getDebugInfo()
     {
-        return array (  113 => 35,  107 => 33,  104 => 32,  93 => 30,  88 => 29,  83 => 28,  77 => 27,  75 => 26,  72 => 25,  70 => 24,  64 => 20,  55 => 18,  38 => 6,  34 => 5,  30 => 4,  27 => 3,  22 => 2,  19 => 1,);
+        return array (  68 => 22,  64 => 20,  55 => 18,  38 => 6,  34 => 5,  30 => 4,  27 => 3,  22 => 2,  19 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -143,7 +98,7 @@ class __TwigTemplate_9b40208c2f5dda7abab9911d7b482780bd67760f70bf661594818594a18
         return new Twig_Source("<div class=\"c-news--grid\">
   {% for post in posts %}
   <div class=\"c-news--grid--object\">
-    <p class=\"object--date\">{{ post.published_at|date('M d, Y') }}</p>
+    <span class=\"object--date\">{{ post.published_at|date('M d, Y') }}</span>
     <h3 class=\"object--title\">{{ post.title }}</h3>
     <a class=\"object--button o-button o-button--medium o-button--medium__outline-color\" href=\"{{ post.url }}\">
       Lees meer
@@ -161,20 +116,6 @@ class __TwigTemplate_9b40208c2f5dda7abab9911d7b482780bd67760f70bf661594818594a18
   {% endfor %}
 </div>
 
-
-
-{% if posts.lastPage > 1 %}
-<ul class=\"pagination\">
-  {% if posts.currentPage > 1 %}
-  <li><a href=\"{{ this.page.baseFileName|page({ (pageParam): (posts.currentPage-1) }) }}\">&larr; Prev</a></li>
-  {% endif %} {% for page in 1..posts.lastPage %}
-  <li class=\"{{ posts.currentPage == page ? 'active' : null }}\">
-    <a href=\"{{ this.page.baseFileName|page({ (pageParam): page }) }}\">{{ page }}</a>
-  </li>
-  {% endfor %} {% if posts.lastPage > posts.currentPage %}
-  <li><a href=\"{{ this.page.baseFileName|page({ (pageParam): (posts.currentPage+1) }) }}\">Next &rarr;</a></li>
-  {% endif %}
-</ul>
-{% endif %}", "/Applications/MAMP/htdocs/cultuurfonds-boreel/themes/cultuurfonds-boreel/partials/newsPosts/default.htm", "");
+{% partial 'newsPosts/news-posts_pagination' %}", "/Applications/MAMP/htdocs/cultuurfonds-boreel/themes/cultuurfonds-boreel/partials/newsPosts/default.htm", "");
     }
 }

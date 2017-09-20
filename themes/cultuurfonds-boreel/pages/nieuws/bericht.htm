@@ -18,10 +18,12 @@ function onEnd()
 }
 ?>
 ==
-{% if post %}
-    <h2>{{ post.title }}</h2>
+{% partial 'newsPost/news-post_header' %}
 
-    {% component 'newsPost' %}
+<div class="main-content--container">
+{% if post %}
+  {% component 'newsPost'%}
 {% else %}
     <h2>Post not found</h2>
 {% endif %}
+</div>

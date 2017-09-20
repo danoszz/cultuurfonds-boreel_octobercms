@@ -1,4 +1,4 @@
-1505857800a:1:{s:25:"verzameling/kunstwerk.htm";a:11:{s:8:"fileName";s:25:"verzameling/kunstwerk.htm";s:7:"content";s:532:"title = "Verzameling Kunstwerk"
+1505917850a:1:{s:25:"verzameling/kunstwerk.htm";a:12:{s:8:"fileName";s:25:"verzameling/kunstwerk.htm";s:7:"content";s:749:"title = "Verzameling Kunstwerk"
 url = "/verzameling/kunstwerk/:slug"
 layout = "default"
 description = "Bekijk een kunstwerk."
@@ -7,31 +7,47 @@ is_hidden = 0
 [blogPost galleryPost]
 slug = "{{ :slug }}"
 categoryPage = "verzameling/categorie"
+
+[blogRelated galleryRelated]
+slug = "{{ :slug }}"
+results = 3
+orderBy = 0
+direction = "desc"
+postPage = "verzameling"
 ==
 <?php
 function onEnd()
 {
+  
     // Optional - set the page title to the post title
     if (isset($this->post))
         $this->page->title = $this->post->title;
 }
 ?>
 ==
+{% partial 'galleryPost/gallery-post_header' %}
+
+<div class="main-content--container">
 {% if post %}
-    <h2>{{ post.title }}</h2>
-
-    {% component 'galleryPost' %}
+  {% component 'galleryPost'%}
 {% else %}
     <h2>Post not found</h2>
-{% endif %}";s:5:"mtime";i:1505838614;s:6:"markup";s:135:"{% if post %}
-    <h2>{{ post.title }}</h2>
+{% endif %}
+{% component 'galleryRelated'%}
+</div>
+";s:5:"mtime";i:1505917248;s:6:"markup";s:227:"{% partial 'galleryPost/gallery-post_header' %}
 
-    {% component 'galleryPost' %}
+<div class="main-content--container">
+{% if post %}
+  {% component 'galleryPost'%}
 {% else %}
     <h2>Post not found</h2>
-{% endif %}";s:4:"code";s:157:"function onEnd()
+{% endif %}
+{% component 'galleryRelated'%}
+</div>";s:4:"code";s:161:"function onEnd()
 {
+  
     // Optional - set the page title to the post title
     if (isset($this->post))
         $this->page->title = $this->post->title;
-}";s:5:"title";s:21:"Verzameling Kunstwerk";s:3:"url";s:28:"/verzameling/kunstwerk/:slug";s:6:"layout";s:7:"default";s:11:"description";s:21:"Bekijk een kunstwerk.";s:9:"is_hidden";s:1:"0";s:20:"blogPost galleryPost";a:2:{s:4:"slug";s:11:"{{ :slug }}";s:12:"categoryPage";s:21:"verzameling/categorie";}}}
+}";s:5:"title";s:21:"Verzameling Kunstwerk";s:3:"url";s:28:"/verzameling/kunstwerk/:slug";s:6:"layout";s:7:"default";s:11:"description";s:21:"Bekijk een kunstwerk.";s:9:"is_hidden";s:1:"0";s:20:"blogPost galleryPost";a:2:{s:4:"slug";s:11:"{{ :slug }}";s:12:"categoryPage";s:21:"verzameling/categorie";}s:26:"blogRelated galleryRelated";a:5:{s:4:"slug";s:11:"{{ :slug }}";s:7:"results";s:1:"3";s:7:"orderBy";s:1:"0";s:9:"direction";s:4:"desc";s:8:"postPage";s:11:"verzameling";}}}

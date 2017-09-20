@@ -11,6 +11,20 @@
 
 }
 
+.c-news--grid {
+	.c-news--grid--object {
+		opacity: 0;
+		animation: $fadeinBottom;
+	}
+	@for $i from 1 to 20 {
+		.c-news--grid--object:nth-child(#{$i}) {
+			animation-delay: $i * $delay__1;
+		}
+	}
+
+}
+
+
 
 @keyframes fadeInBottom {
   0% {

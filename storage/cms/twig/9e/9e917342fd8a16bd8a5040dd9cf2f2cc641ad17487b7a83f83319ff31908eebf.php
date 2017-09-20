@@ -84,34 +84,33 @@ class __TwigTemplate_4a41e040ce9c79b41ca5aef05c862ab93b945ba0a77211a71a650aa4359
         // line 20
         echo "  </div>
 
-
-";
-        // line 23
+  ";
+        // line 22
         if (($this->getAttribute(($context["posts"] ?? null), "lastPage", array()) > 1)) {
-            // line 24
+            // line 23
             echo "    <ul class=\"pagination\">
         ";
-            // line 25
+            // line 24
             if (($this->getAttribute(($context["posts"] ?? null), "currentPage", array()) > 1)) {
-                // line 26
+                // line 25
                 echo "            <li><a href=\"";
                 echo $this->env->getExtension('Cms\Twig\Extension')->pageFilter($this->getAttribute($this->getAttribute(($context["this"] ?? null), "page", array()), "baseFileName", array()), array(($context["pageParam"] ?? null) => ($this->getAttribute(($context["posts"] ?? null), "currentPage", array()) - 1)));
                 echo "\">&larr; Prev</a></li>
         ";
             }
-            // line 28
+            // line 27
             echo "
         ";
-            // line 29
+            // line 28
             $context['_parent'] = $context;
             $context['_seq'] = twig_ensure_traversable(range(1, $this->getAttribute(($context["posts"] ?? null), "lastPage", array())));
             foreach ($context['_seq'] as $context["_key"] => $context["page"]) {
-                // line 30
+                // line 29
                 echo "            <li class=\"";
                 echo ((($this->getAttribute(($context["posts"] ?? null), "currentPage", array()) == $context["page"])) ? ("active") : (null));
                 echo "\">
                 <a href=\"";
-                // line 31
+                // line 30
                 echo $this->env->getExtension('Cms\Twig\Extension')->pageFilter($this->getAttribute($this->getAttribute(($context["this"] ?? null), "page", array()), "baseFileName", array()), array(($context["pageParam"] ?? null) => $context["page"]));
                 echo "\">";
                 echo twig_escape_filter($this->env, $context["page"], "html", null, true);
@@ -122,20 +121,20 @@ class __TwigTemplate_4a41e040ce9c79b41ca5aef05c862ab93b945ba0a77211a71a650aa4359
             $_parent = $context['_parent'];
             unset($context['_seq'], $context['_iterated'], $context['_key'], $context['page'], $context['_parent'], $context['loop']);
             $context = array_intersect_key($context, $_parent) + $_parent;
-            // line 34
+            // line 33
             echo "
         ";
-            // line 35
+            // line 34
             if (($this->getAttribute(($context["posts"] ?? null), "lastPage", array()) > $this->getAttribute(($context["posts"] ?? null), "currentPage", array()))) {
-                // line 36
+                // line 35
                 echo "            <li><a href=\"";
                 echo $this->env->getExtension('Cms\Twig\Extension')->pageFilter($this->getAttribute($this->getAttribute(($context["this"] ?? null), "page", array()), "baseFileName", array()), array(($context["pageParam"] ?? null) => ($this->getAttribute(($context["posts"] ?? null), "currentPage", array()) + 1)));
                 echo "\">Next &rarr;</a></li>
         ";
             }
-            // line 38
+            // line 37
             echo "    </ul>
-";
+  ";
         }
     }
 
@@ -151,7 +150,7 @@ class __TwigTemplate_4a41e040ce9c79b41ca5aef05c862ab93b945ba0a77211a71a650aa4359
 
     public function getDebugInfo()
     {
-        return array (  137 => 38,  131 => 36,  129 => 35,  126 => 34,  115 => 31,  110 => 30,  106 => 29,  103 => 28,  97 => 26,  95 => 25,  92 => 24,  90 => 23,  85 => 20,  76 => 18,  68 => 15,  63 => 13,  59 => 12,  56 => 11,  53 => 10,  40 => 8,  35 => 7,  33 => 6,  30 => 5,  25 => 4,  21 => 2,  19 => 1,);
+        return array (  136 => 37,  130 => 35,  128 => 34,  125 => 33,  114 => 30,  109 => 29,  105 => 28,  102 => 27,  96 => 25,  94 => 24,  91 => 23,  89 => 22,  85 => 20,  76 => 18,  68 => 15,  63 => 13,  59 => 12,  56 => 11,  53 => 10,  40 => 8,  35 => 7,  33 => 6,  30 => 5,  25 => 4,  21 => 2,  19 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -185,8 +184,7 @@ class __TwigTemplate_4a41e040ce9c79b41ca5aef05c862ab93b945ba0a77211a71a650aa4359
     {% endfor %}
   </div>
 
-
-{% if posts.lastPage > 1 %}
+  {% if posts.lastPage > 1 %}
     <ul class=\"pagination\">
         {% if posts.currentPage > 1 %}
             <li><a href=\"{{ this.page.baseFileName|page({ (pageParam): (posts.currentPage-1) }) }}\">&larr; Prev</a></li>
@@ -202,6 +200,6 @@ class __TwigTemplate_4a41e040ce9c79b41ca5aef05c862ab93b945ba0a77211a71a650aa4359
             <li><a href=\"{{ this.page.baseFileName|page({ (pageParam): (posts.currentPage+1) }) }}\">Next &rarr;</a></li>
         {% endif %}
     </ul>
-{% endif %}", "/Applications/MAMP/htdocs/cultuurfonds-boreel/themes/cultuurfonds-boreel/partials/galleryPosts/default.htm", "");
+  {% endif %}", "/Applications/MAMP/htdocs/cultuurfonds-boreel/themes/cultuurfonds-boreel/partials/galleryPosts/default.htm", "");
     }
 }

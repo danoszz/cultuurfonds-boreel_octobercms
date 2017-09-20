@@ -1,4 +1,4 @@
-1505857800a:1:{s:25:"verzameling/categorie.htm";a:12:{s:8:"fileName";s:25:"verzameling/categorie.htm";s:7:"content";s:525:"title = "Verzameling Categorie"
+1505917633a:1:{s:25:"verzameling/categorie.htm";a:12:{s:8:"fileName";s:25:"verzameling/categorie.htm";s:7:"content";s:525:"title = "Verzameling Categorie"
 url = "/verzameling/categorie/:slug"
 layout = "default"
 description = "Bekijk de kunstverzameling per categorie."

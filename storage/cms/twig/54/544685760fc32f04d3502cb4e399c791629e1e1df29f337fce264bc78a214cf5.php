@@ -17,7 +17,7 @@ class __TwigTemplate_42b6b0f50aef4ef85d87d4cb9ef2d5c365505f6ad81cf6e81dcce2895f4
     {
         // line 1
         echo "<div class=\"main-content--hero main-content--hero__home\">
-  <h1>Cultuurfonds Boreel</h1>
+  <h1 class=\"main-content--container\">Cultuurfonds Boreel</h1>
 </div>
 <div class=\"main-content--container\">
   <div class=\"page-home--content__information\">
@@ -39,7 +39,7 @@ class __TwigTemplate_42b6b0f50aef4ef85d87d4cb9ef2d5c365505f6ad81cf6e81dcce2895f4
         echo $this->env->getExtension('CMS')->componentFunction("galleryPosts"        , $context['__cms_component_params']        );
         unset($context['__cms_component_params']);
         // line 14
-        echo "  
+        echo "
     <h2>Het laatste nieuws</h2>
    ";
         // line 16
@@ -76,7 +76,7 @@ class __TwigTemplate_42b6b0f50aef4ef85d87d4cb9ef2d5c365505f6ad81cf6e81dcce2895f4
     public function getSourceContext()
     {
         return new Twig_Source("<div class=\"main-content--hero main-content--hero__home\">
-  <h1>Cultuurfonds Boreel</h1>
+  <h1 class=\"main-content--container\">Cultuurfonds Boreel</h1>
 </div>
 <div class=\"main-content--container\">
   <div class=\"page-home--content__information\">
@@ -88,7 +88,7 @@ class __TwigTemplate_42b6b0f50aef4ef85d87d4cb9ef2d5c365505f6ad81cf6e81dcce2895f4
   </div>
   <h2>Een greep uit de collectie</h2>
   {% component 'galleryPosts' %}
-  
+
     <h2>Het laatste nieuws</h2>
    {% component 'newsPosts' %}
 </div>", "/Applications/MAMP/htdocs/cultuurfonds-boreel/themes/cultuurfonds-boreel/pages/home.htm", "");

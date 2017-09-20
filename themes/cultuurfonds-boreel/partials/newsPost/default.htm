@@ -1,0 +1,21 @@
+{% set post = __SELF__.post %}
+
+
+  <div class="page-post--content__information page-post__news">
+    <p class="page--date">{{ post.published_at|date('M d, Y') }}</p>
+    <h1 class="page--title">{{ post.title }}</h1>
+    <div class="page--text">{{ post.content_html|raw }}</p>
+    {% if post.featured_images.count %}
+        <div class="featured-images text-center">
+            {% for image in post.featured_images %}
+                <p>
+                    <img
+                        data-src="{{ image.filename }}"
+                        src="{{ image.path }}"
+                        alt="{{ image.description }}"
+                        style="max-width: 100%" />
+                </p>
+            {% endfor %}
+        </div>
+    {% endif %}
+  </div>

@@ -63,27 +63,26 @@ class __TwigTemplate_ad84972374b7ef52600192e39bd449dcb2b69b9321c5cdd268c7fbbb482
         // line 23
         echo "    </header>
     <main class=\"main-content\">
-      
       ";
-        // line 26
+        // line 25
         echo $this->env->getExtension('CMS')->pageFunction();
-        // line 27
+        // line 26
         echo "    </main>
     <aside class=\"sidebar\">
       ";
-        // line 29
+        // line 28
         $context['__cms_partial_params'] = [];
         echo $this->env->getExtension('CMS')->partialFunction("site/sidebar"        , $context['__cms_partial_params']        );
         unset($context['__cms_partial_params']);
-        // line 30
+        // line 29
         echo "    </aside>
     <footer class=\"footer\">
       ";
-        // line 32
+        // line 31
         $context['__cms_partial_params'] = [];
         echo $this->env->getExtension('CMS')->partialFunction("site/footer"        , $context['__cms_partial_params']        );
         unset($context['__cms_partial_params']);
-        // line 33
+        // line 32
         echo "    </footer>
   </div>
   <div class=\"toggle--menu\">
@@ -92,15 +91,15 @@ class __TwigTemplate_ad84972374b7ef52600192e39bd449dcb2b69b9321c5cdd268c7fbbb482
 
   <!-- Scripts -->
   <script src=\"";
-        // line 40
+        // line 39
         echo $this->env->getExtension('Cms\Twig\Extension')->themeFilter("assets/build/vendors/jquery.js");
         echo "\"></script>
   <script src=\"";
-        // line 41
+        // line 40
         echo $this->env->getExtension('Cms\Twig\Extension')->themeFilter("assets/build/scripts/app.js");
         echo "\"></script>
   ";
-        // line 42
+        // line 41
         echo '<script src="'. Request::getBasePath()
                 .'/modules/system/assets/js/framework.js"></script>'.PHP_EOL;
         echo '<script src="'. Request::getBasePath()
@@ -110,7 +109,7 @@ class __TwigTemplate_ad84972374b7ef52600192e39bd449dcb2b69b9321c5cdd268c7fbbb482
         echo " ";
         echo $this->env->getExtension('CMS')->assetsFunction('js');
         echo $this->env->getExtension('CMS')->displayBlock('scripts');
-        // line 43
+        // line 42
         echo "
 </body>
 
@@ -129,7 +128,7 @@ class __TwigTemplate_ad84972374b7ef52600192e39bd449dcb2b69b9321c5cdd268c7fbbb482
 
     public function getDebugInfo()
     {
-        return array (  114 => 43,  104 => 42,  100 => 41,  96 => 40,  87 => 33,  83 => 32,  79 => 30,  75 => 29,  71 => 27,  69 => 26,  64 => 23,  60 => 22,  52 => 16,  47 => 15,  41 => 12,  34 => 8,  30 => 7,  26 => 6,  19 => 1,);
+        return array (  113 => 42,  103 => 41,  99 => 40,  95 => 39,  86 => 32,  82 => 31,  78 => 29,  74 => 28,  70 => 26,  68 => 25,  64 => 23,  60 => 22,  52 => 16,  47 => 15,  41 => 12,  34 => 8,  30 => 7,  26 => 6,  19 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -166,7 +165,6 @@ class __TwigTemplate_ad84972374b7ef52600192e39bd449dcb2b69b9321c5cdd268c7fbbb482
       {% partial 'site/header' %}
     </header>
     <main class=\"main-content\">
-      
       {% page %}
     </main>
     <aside class=\"sidebar\">

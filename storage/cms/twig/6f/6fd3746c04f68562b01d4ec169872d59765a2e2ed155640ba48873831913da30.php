@@ -16,9 +16,31 @@ class __TwigTemplate_a553c2a038c0b7b421ad51b00058ad78461abef14c570ce06e4dccd5457
     protected function doDisplay(array $context, array $blocks = array())
     {
         // line 1
+        $context['__cms_partial_params'] = [];
+        echo $this->env->getExtension('CMS')->partialFunction("galleryPost/gallery-post_header"        , $context['__cms_partial_params']        );
+        unset($context['__cms_partial_params']);
+        // line 2
+        echo "
+<div class=\"main-content--container\">
+";
+        // line 4
+        if (($context["post"] ?? null)) {
+            // line 5
+            echo "  ";
+            $context['__cms_component_params'] = [];
+            echo $this->env->getExtension('CMS')->componentFunction("galleryPost"            , $context['__cms_component_params']            );
+            unset($context['__cms_component_params']);
+        } else {
+            // line 7
+            echo "    <h2>Post not found</h2>
+";
+        }
+        // line 9
         $context['__cms_component_params'] = [];
-        echo $this->env->getExtension('CMS')->componentFunction("blogPost"        , $context['__cms_component_params']        );
+        echo $this->env->getExtension('CMS')->componentFunction("galleryRelated"        , $context['__cms_component_params']        );
         unset($context['__cms_component_params']);
+        // line 10
+        echo "</div>";
     }
 
     public function getTemplateName()
@@ -33,7 +55,7 @@ class __TwigTemplate_a553c2a038c0b7b421ad51b00058ad78461abef14c570ce06e4dccd5457
 
     public function getDebugInfo()
     {
-        return array (  19 => 1,);
+        return array (  43 => 10,  39 => 9,  35 => 7,  29 => 5,  27 => 4,  23 => 2,  19 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -46,6 +68,15 @@ class __TwigTemplate_a553c2a038c0b7b421ad51b00058ad78461abef14c570ce06e4dccd5457
 
     public function getSourceContext()
     {
-        return new Twig_Source("{% component 'blogPost' %}", "/Applications/MAMP/htdocs/cultuurfonds-boreel/themes/cultuurfonds-boreel/pages/verzameling/kunstwerk.htm", "");
+        return new Twig_Source("{% partial 'galleryPost/gallery-post_header' %}
+
+<div class=\"main-content--container\">
+{% if post %}
+  {% component 'galleryPost'%}
+{% else %}
+    <h2>Post not found</h2>
+{% endif %}
+{% component 'galleryRelated'%}
+</div>", "/Applications/MAMP/htdocs/cultuurfonds-boreel/themes/cultuurfonds-boreel/pages/verzameling/kunstwerk.htm", "");
     }
 }

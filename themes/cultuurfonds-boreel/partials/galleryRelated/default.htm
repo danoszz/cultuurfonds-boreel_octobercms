@@ -1,0 +1,19 @@
+
+  <div class="c-gallery--grid">
+      {% for Post in __SELF__.posts %}
+      <figure class="c-gallery--grid--object">
+        {% if post.featured_images.count %}
+          {% for image in post.featured_images %}
+        <img data-src="{{ image.filename }}" src="{{ image.path | resize(500, false, { mode: 'auto', quality: '80' }) }}" alt="{{ image.description }}" />
+          {% endfor %}
+        {% endif %}
+        <figcaption>
+            <p class="excerpt">{{ post.summary|raw }}</p>
+            <h3>{{ post.title }}</h3>
+        </figcaption>
+        <a href="{{ post.url }}"></a>
+      </figure>
+    {% else %}
+    <p class="no-data">{{ noPostsMessage }}</p>
+    {% endfor %}
+  </div>

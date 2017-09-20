@@ -1,13 +1,14 @@
 // Inline link styling
 
-p a {
+p a,
+li a {
 	$color: $link-underline-color;
 	$weight: $link-underline-width;
 	$offset: $link-underline-offset;
 	// source: https://codepen.io/ghepting/pen/tLnHK?editors=1100
 	text-decoration: underline;
 	text-decoration-skip: ink;
-
+	color: $light-red-one;
 	&:focus,
 	&:hover {
 		$color: $link-underline-color-active;

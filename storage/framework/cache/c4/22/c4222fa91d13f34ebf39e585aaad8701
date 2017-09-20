@@ -1,1 +1,50 @@
-1505857524N;
+1505915443a:1:{s:20:"newsPost/default.htm";a:5:{s:8:"fileName";s:20:"newsPost/default.htm";s:7:"content";s:829:"{% set post = __SELF__.post %}
+
+
+{% partial 'newsPost/news-post_header' %}
+
+<div class="main-content--container">
+  <div class="page-post--content__information">
+    <p class="page--date">{{ post.published_at|date('M d, Y') }}</p>
+    <h1 class="page--title">{{ post.title }}</h1>
+    <div class="page--text">{{ post.content_html|raw }}</p>
+    {% if post.featured_images.count %}
+        <div class="featured-images text-center">
+            {% for image in post.featured_images %}
+                <p>
+                    <img
+                        data-src="{{ image.filename }}"
+                        src="{{ image.path }}"
+                        alt="{{ image.description }}"
+                        style="max-width: 100%" />
+                </p>
+            {% endfor %}
+        </div>
+    {% endif %}
+  </div>
+</div>
+";s:5:"mtime";i:1505910414;s:6:"markup";s:828:"{% set post = __SELF__.post %}
+
+
+{% partial 'newsPost/news-post_header' %}
+
+<div class="main-content--container">
+  <div class="page-post--content__information">
+    <p class="page--date">{{ post.published_at|date('M d, Y') }}</p>
+    <h1 class="page--title">{{ post.title }}</h1>
+    <div class="page--text">{{ post.content_html|raw }}</p>
+    {% if post.featured_images.count %}
+        <div class="featured-images text-center">
+            {% for image in post.featured_images %}
+                <p>
+                    <img
+                        data-src="{{ image.filename }}"
+                        src="{{ image.path }}"
+                        alt="{{ image.description }}"
+                        style="max-width: 100%" />
+                </p>
+            {% endfor %}
+        </div>
+    {% endif %}
+  </div>
+</div>";s:4:"code";N;}}

@@ -7,20 +7,31 @@ is_hidden = 0
 [blogPost galleryPost]
 slug = "{{ :slug }}"
 categoryPage = "verzameling/categorie"
+
+[blogRelated galleryRelated]
+slug = "{{ :slug }}"
+results = 3
+orderBy = 0
+direction = "desc"
+postPage = "verzameling"
 ==
 <?php
 function onEnd()
 {
+  
     // Optional - set the page title to the post title
     if (isset($this->post))
         $this->page->title = $this->post->title;
 }
 ?>
 ==
-{% if post %}
-    <h2>{{ post.title }}</h2>
+{% partial 'galleryPost/gallery-post_header' %}
 
-    {% component 'galleryPost' %}
+<div class="main-content--container">
+{% if post %}
+  {% component 'galleryPost'%}
 {% else %}
     <h2>Post not found</h2>
 {% endif %}
+{% component 'galleryRelated'%}
+</div>

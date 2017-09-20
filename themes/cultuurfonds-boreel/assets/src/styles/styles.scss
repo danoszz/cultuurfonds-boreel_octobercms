@@ -6,6 +6,8 @@
 // --------------------
 @import 'lib/normalize';
 @import 'mixins/betterwebtypography';
+@import 'mixins/shadows';
+
 
 // Base and custom resets
 // ----------------------
@@ -14,6 +16,9 @@
 // Layouts
 // -------
 @import 'layouts/pages/home';
+@import 'layouts/pages/news-post';
+@import 'layouts/pages/gallery-post';
+
 @import 'layouts/default';
 
 

@@ -1,4 +1,4 @@
-1505857801a:1:{s:24:"galleryPosts/default.htm";a:5:{s:8:"fileName";s:24:"galleryPosts/default.htm";s:7:"content";s:1428:"{% set posts = __SELF__.posts %}
+1505917885a:1:{s:24:"galleryPosts/default.htm";a:5:{s:8:"fileName";s:24:"galleryPosts/default.htm";s:7:"content";s:1431:"{% set posts = __SELF__.posts %}
 
   <div class="c-gallery--grid">
     {% for post in posts %}
@@ -19,8 +19,7 @@
     {% endfor %}
   </div>
 
-
-{% if posts.lastPage > 1 %}
+  {% if posts.lastPage > 1 %}
     <ul class="pagination">
         {% if posts.currentPage > 1 %}
             <li><a href="{{ this.page.baseFileName|page({ (pageParam): (posts.currentPage-1) }) }}">&larr; Prev</a></li>
@@ -36,8 +35,8 @@
             <li><a href="{{ this.page.baseFileName|page({ (pageParam): (posts.currentPage+1) }) }}">Next &rarr;</a></li>
         {% endif %}
     </ul>
-{% endif %}
-";s:5:"mtime";i:1505838811;s:6:"markup";s:1427:"{% set posts = __SELF__.posts %}
+  {% endif %}
+";s:5:"mtime";i:1505916460;s:6:"markup";s:1430:"{% set posts = __SELF__.posts %}
 
   <div class="c-gallery--grid">
     {% for post in posts %}
@@ -58,8 +57,7 @@
     {% endfor %}
   </div>
 
-
-{% if posts.lastPage > 1 %}
+  {% if posts.lastPage > 1 %}
     <ul class="pagination">
         {% if posts.currentPage > 1 %}
             <li><a href="{{ this.page.baseFileName|page({ (pageParam): (posts.currentPage-1) }) }}">&larr; Prev</a></li>
@@ -75,4 +73,4 @@
             <li><a href="{{ this.page.baseFileName|page({ (pageParam): (posts.currentPage+1) }) }}">Next &rarr;</a></li>
         {% endif %}
     </ul>
-{% endif %}";s:4:"code";N;}}
+  {% endif %}";s:4:"code";N;}}

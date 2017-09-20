@@ -1,7 +1,7 @@
-1505857502a:1:{s:21:"newsPosts/default.htm";a:5:{s:8:"fileName";s:21:"newsPosts/default.htm";s:7:"content";s:1383:"<div class="c-news--grid">
+1505917909a:1:{s:21:"newsPosts/default.htm";a:5:{s:8:"fileName";s:21:"newsPosts/default.htm";s:7:"content";s:828:"<div class="c-news--grid">
   {% for post in posts %}
   <div class="c-news--grid--object">
-    <p class="object--date">{{ post.published_at|date('M d, Y') }}</p>
+    <span class="object--date">{{ post.published_at|date('M d, Y') }}</span>
     <h3 class="object--title">{{ post.title }}</h3>
     <a class="object--button o-button o-button--medium o-button--medium__outline-color" href="{{ post.url }}">
       Lees meer
@@ -19,25 +19,11 @@
   {% endfor %}
 </div>
 
-
-
-{% if posts.lastPage > 1 %}
-<ul class="pagination">
-  {% if posts.currentPage > 1 %}
-  <li><a href="{{ this.page.baseFileName|page({ (pageParam): (posts.currentPage-1) }) }}">&larr; Prev</a></li>
-  {% endif %} {% for page in 1..posts.lastPage %}
-  <li class="{{ posts.currentPage == page ? 'active' : null }}">
-    <a href="{{ this.page.baseFileName|page({ (pageParam): page }) }}">{{ page }}</a>
-  </li>
-  {% endfor %} {% if posts.lastPage > posts.currentPage %}
-  <li><a href="{{ this.page.baseFileName|page({ (pageParam): (posts.currentPage+1) }) }}">Next &rarr;</a></li>
-  {% endif %}
-</ul>
-{% endif %}
-";s:5:"mtime";i:1505856300;s:6:"markup";s:1382:"<div class="c-news--grid">
+{% partial 'newsPosts/news-posts_pagination' %}
+";s:5:"mtime";i:1505910611;s:6:"markup";s:827:"<div class="c-news--grid">
   {% for post in posts %}
   <div class="c-news--grid--object">
-    <p class="object--date">{{ post.published_at|date('M d, Y') }}</p>
+    <span class="object--date">{{ post.published_at|date('M d, Y') }}</span>
     <h3 class="object--title">{{ post.title }}</h3>
     <a class="object--button o-button o-button--medium o-button--medium__outline-color" href="{{ post.url }}">
       Lees meer
@@ -55,18 +41,4 @@
   {% endfor %}
 </div>
 
-
-
-{% if posts.lastPage > 1 %}
-<ul class="pagination">
-  {% if posts.currentPage > 1 %}
-  <li><a href="{{ this.page.baseFileName|page({ (pageParam): (posts.currentPage-1) }) }}">&larr; Prev</a></li>
-  {% endif %} {% for page in 1..posts.lastPage %}
-  <li class="{{ posts.currentPage == page ? 'active' : null }}">
-    <a href="{{ this.page.baseFileName|page({ (pageParam): page }) }}">{{ page }}</a>
-  </li>
-  {% endfor %} {% if posts.lastPage > posts.currentPage %}
-  <li><a href="{{ this.page.baseFileName|page({ (pageParam): (posts.currentPage+1) }) }}">Next &rarr;</a></li>
-  {% endif %}
-</ul>
-{% endif %}";s:4:"code";N;}}
+{% partial 'newsPosts/news-posts_pagination' %}";s:4:"code";N;}}

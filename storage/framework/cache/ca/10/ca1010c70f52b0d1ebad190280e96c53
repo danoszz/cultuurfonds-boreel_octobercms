@@ -1,4 +1,4 @@
-1505857891a:1:{s:15:"verzameling.htm";a:13:{s:8:"fileName";s:15:"verzameling.htm";s:7:"content";s:1098:"title = "Verzameling"
+1505917633a:1:{s:15:"verzameling.htm";a:13:{s:8:"fileName";s:15:"verzameling.htm";s:7:"content";s:1098:"title = "Verzameling"
 url = "/verzameling/:slug"
 layout = "default"
 description = "Bekijk kunst in een specifieke verzameling."
